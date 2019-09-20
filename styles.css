@@ -46,7 +46,7 @@
       background-color: black;
    }
    .footer_end {
-      background-color: beige;
+      background-color: #a47f9d;
       margin-top: 17%;
       margin-left: -1%;
       margin-right: 0%;
@@ -55,14 +55,19 @@
 
    .lists {
       font-size: 1.5em;
-
+      color: beige;
    }
    .footerParagraph {
       text-align: center;
       font-size: 1.2em;
+      color: beige;
    }
 
    .bottomParagraph {
       text-align: center; 
-      color: #a47f9d;
+      color: beige;
+   }
+
+   a:link, a:visited {
+      color:beige;
    }
