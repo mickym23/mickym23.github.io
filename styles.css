@@ -46,7 +46,7 @@
       background-color: black;
    }
    .footer_end {
-      background-color: #a47f9d;
+      background-color: beige;
       margin-top: 17%;
       margin-left: -1%;
       margin-right: 0%;
@@ -64,5 +64,5 @@
 
    .bottomParagraph {
       text-align: center; 
-      color: beige;
+      color: #a47f9d;
    }
