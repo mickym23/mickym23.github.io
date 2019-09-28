@@ -1,6 +1,6 @@
 header {
    background-color: #dadada;
-   width: 100%;
+   width: 150%;
    text-align: center;
    margin-top: -2.2%;
 }
@@ -84,3 +84,6 @@ a:link {
    color: beige;
 }
 
+footer {
+   width: 150%;
+}
