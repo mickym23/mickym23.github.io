@@ -1,18 +1,23 @@
+/****************************************************************
+                     Header Fonts CSS
+****************************************************************/
 header {
-   background-color: #dadada;
+   background-color: #515151;
    width: auto;
    text-align: center;
-   margin-top: -2.2%;
+   margin-top: -2.13%;
 }
 
 h1, h2, h3 {
    font-family: "Bungee Inline", sans-serif;
    font-size: 3em;
+   color: beige;
 }
 
 h1 {
    padding-top: 0.6em;
 }
+
 h2 {
    font-size: 2em;
 }
@@ -21,41 +26,53 @@ h3 {
    font-size: 2em;
    padding-bottom: 1%;
 }
-.screenshot {
-   width: 70%;
+
+/****************************************************************
+                  Main and Grid Sections CSS
+*****************************************************************
+                           Grid Specifications:
+            - (Small) Mobile is catered for first in the below CSS
+            - (Medium) Tablets: 32.5em+
+            - (large) Desktop: 60em+
+****************************************************************/
+main {
+   margin-top: -2.1%;
+   text-align: center;
+   max-width: 99.80%;
+   display: grid;
+   grid-template-columns: 1fr;
+   font-size: 1rem;
+}
+
+section {
+   width: 100%;
+   background-color: rgb(247, 255, 254);
+   border: 1px solid black;    
 }
 
 h4, .company {
    font-family: "Syncopate", sans-serif;
-   font-size: 1.5em;
+   font-size: 1.59em;
+}
+
+.screenshot {
+   width: 70%;
+   padding: 1em;
 }
 
 p {
    font-family: "Annie Use Your telescope", serif;
    font-size: 1.5em;
    text-align: center;
-}
-
-main {
-   margin-top: -2.5%;
-   text-align: center;
-   max-width: 99.78%;
-   display: grid;
-   grid-template-columns: 1fr;
-   font-size: 1rem;
-}
-main section {
-   width: 100%;
-   background-color: beige;
-   border: 1px solid black; 
-}
-main section img {
-   padding: 1em;
-   width: 100%;
-}
-
-main section p {
    padding: 15px;
+}
+
+/*********************************************************************
+                              Footer CSS
+*********************************************************************/
+
+footer {
+   width: auto;
 }
 
 .footer_end {
@@ -82,44 +99,4 @@ a:link {
 
 #byuiLink {
    color: beige;
-}
-
-footer {
-   width: auto;
-}
-
-@media only screen and (min-width: 32.5em) {
-   header {
-      width: auto;
-   }
-
-   h1{
-       font-size: 2.5rem;
-   }
-   h2 {
-       font-size: 1.5rem;
-   }
-   main {
-       max-width: auto;
-       grid-template-columns: 1fr 1fr;
-   }
-   section:nth-child(2){
-       grid-column: span 1;
-   }
-   section:nth-child(3){
-       grid-column: span 2;
-   }
-}
-
-@media only screen and (min-width: 60em) {
-   main {
-       max-width: auto;
-       grid-template-columns: 1fr 1fr 1fr;
-       
-   }
-   section:nth-child(3) {
-       grid-column: span 1;
-   }
-
-   
 }
