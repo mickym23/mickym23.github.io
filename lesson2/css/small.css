@@ -1,6 +1,9 @@
 /****************************************************************
                      Header Fonts CSS
 ****************************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Bungee+Inline|Syncopate&display=swap');
+
 header {
    background-color: #515151;
    width: auto;
