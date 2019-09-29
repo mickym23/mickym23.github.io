@@ -21,7 +21,7 @@
    .image {
       width: 16%;
       position: relative;
-      /* float: right;  */
+      float: right;
       margin-top: -10%;
       margin-right: 3.2%;
       box-shadow: 4px 4px 4px black;
