@@ -21,7 +21,7 @@
    .image {
       width: 16%;
       position: relative;
-      float: right;
+      float: right;  */
       margin-top: -10%;
       margin-right: 3.2%;
       box-shadow: 4px 4px 4px black;
@@ -44,36 +44,35 @@
       background-color: black;
    }
 
-   
-footer {
-   width: auto;
-}
+   footer {
+      width: auto;
+   }
+   .footer_end {
+      background-color: #515151;
+      margin-top: 13.8%;
+      margin-left: -1%;
+      margin-right: 0%;
+      padding: 1% 2% 1% 2%;
+   }
 
-.footer_end {
-   background-color: #515151;
-   margin-left: -1%;
-   padding: 1% 2% 1% 2%;
-}
+   .lists {
+      font-size: 1.5em;
+      color: black;
+   }
+   .footerParagraph {
+      text-align: center;
+      font-size: 1.2em;
+      color: beige;
+   }
 
-.footerParagraph {
-   text-align: center;
-   font-size: 1.2em;
-   color: beige;
-}
+   .bottomParagraph {
+      text-align: center; 
+      color: #f2f2f2;
+   }
 
-.bottomParagraph {
-   text-align: center; 
-   color: #f2f2f2;
-}
-
-a:link {
-   color: #0b0b0b;
-   font-size: 1.2em;
-}
-
-#byuiLink {
-   color: beige;
-}
+   a:link {
+      color: #0b0b0b;
+   }
    
    #byuiLink {
       color: beige;
