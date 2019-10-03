@@ -1,0 +1,136 @@
+html {
+   max-width: 900px;
+   margin: 0 auto;
+}
+
+img {
+   position: absolute;
+   width: 10%;
+   top: -1.5%;
+}
+
+header {
+   background-color: beige;
+   margin-top: -0.9%;
+   padding: 2.5% 0% 2.5% 0%;
+}
+ 
+h1 {
+   padding-top: 1%; 
+   font-family: "Playfair Display SC", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   text-align: center;
+}
+
+nav {
+   background-color: #829093;
+   padding: 0.3em;
+   margin: 0 auto;
+   text-align: center;
+ }
+ 
+ nav a {
+   padding: 0.5em 0.5em;
+   color: white;
+   text-decoration: none;
+   line-height: 3em;
+ }
+ 
+ nav li{
+   list-style-type: none;
+   font-family: 'Cantata One', "Lucida Sans Unicode", sans-serif;
+   padding: 0% 3% 0% 3%;
+   font-size: 1.2em; 
+   display: flex;
+   flex: 1 1 100%;
+ }
+ 
+ nav a:hover {
+   background-color: beige;
+   color: black;
+   border-radius: 5px;
+ }
+
+ main {
+    background-color: beige;
+    margin-top: -2.5%;
+ }
+p {
+   text-align: center;
+   padding: 2% 2% 2% 2%;
+   margin: -1% 1% -1% 1%;
+}
+
+.libre {
+   font-family: "Libre Baskerville", sans-serif;
+   font-size: 1.4em;
+}
+
+.lora {
+   font-family: "Lora", sans-serif;
+   font-size: 1.2em;
+}
+
+.mont {
+   font-family: "Montserrat", sans-serif;
+   font-size: 1.1em;
+}
+
+.play {
+   font-family: "Playfair Display", sans-serif;
+   font-size: 1em;
+   padding-bottom: 3%;
+}
+
+footer {
+   width: auto;
+   margin-bottom: -4%;
+}
+
+.footer_end {
+   background-color: #515151;
+   padding: 1% 0% 1% 0%;
+}
+
+.footerParagraph {
+   text-align: center;
+   font-size: 1.2em;
+   color: beige;
+}
+
+.bottomParagraph {
+   text-align: center; 
+   color: #f2f2f2;
+}
+
+a:link {
+   color: #0b0b0b;
+   font-size: 1em;
+}
+
+#byuiLink {
+   color: beige;
+}
+
+
+@media only screen and (min-width: 60em) {
+   nav a {
+      padding: 0.5em 0.5em;
+      color: white;
+      text-decoration: none;
+      line-height: 3em;
+    }
+    
+    nav li{
+      list-style-type: none;
+      font-family: 'Cantata One', "Lucida Sans Unicode", sans-serif;
+      padding: 0% 3% 0% 3%;
+      font-size: 1.2em; 
+      display: inline;
+    }
+    
+    nav a:hover {
+      background-color: beige;
+      color: black;
+      border-radius: 5px;
+    }
+}
