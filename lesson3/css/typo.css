@@ -16,11 +16,12 @@ header {
 }
  
 h1 {
-   padding-top: 1%; 
+   /*padding-top: 1%;  */
    font-family: "Playfair Display SC", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   justify-content: center;
+  /* justify-content: center; */
    text-align:center;
 }
+
 
 nav {
    background-color: #829093;
@@ -53,7 +54,8 @@ nav {
 
  main {
     background-color: beige;
-    margin-top: -5%;
+    margin-top: -0.3%;
+    padding-top: 1%;
  }
 p {
    text-align: center;
