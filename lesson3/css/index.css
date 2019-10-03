@@ -24,7 +24,7 @@ nav {
    background-color: #829093;
    padding: 0.3em;
    margin: 0 auto;
-   text-align: center;
+   
  }
  
  nav a {
@@ -37,10 +37,11 @@ nav {
  nav li{
    list-style-type: none;
    font-family: 'Cantata One', "Lucida Sans Unicode", sans-serif;
-   padding: 0% 3% 0% 3%;
    font-size: 1.2em; 
    display: flex;
    flex: 1 1 100%;
+   justify-content: center;
+   text-align:center;
  }
 
  nav li a {
