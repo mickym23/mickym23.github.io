@@ -38,6 +38,7 @@ nav {
  nav li{
    list-style-type: none;
    font-family: 'Cantata One', "Lucida Sans Unicode", sans-serif;
+   padding: 0% 3% 0% 3%;
    font-size: 1.2em; 
    display: flex;
    flex: 1 1 100%;
