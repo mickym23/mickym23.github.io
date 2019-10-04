@@ -65,6 +65,41 @@ nav {
    border-radius: 5px;
  }
 
+/***** Color Scheme ******/
+.secone, 
+.sectwo, 
+.secthree, 
+.secfour,
+.secfive {
+   text-align: center;
+   padding: 5% 5% 5% 5%;
+   color: linen;
+   font-family: "Playfair Display SC", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.secone {
+   
+   background-color: #242038;
+}
+
+.sectwo {
+   background-color: #725ac1;
+}
+
+.secthree {
+   background-color: #8d86c9;
+}
+
+.secfour {
+   background-color: #cac4ce;
+   color: #242038;
+}
+
+.secfive {
+   background-color: #f7ece1;
+   color: #242038;
+}
+
 /***** Color Scheme PNG *****/
 .scheme {
    width: 99.99%;
