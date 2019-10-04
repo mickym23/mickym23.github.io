@@ -19,7 +19,7 @@ header {
    padding: 2.5% 0% 2.5% 0%;
 }
  
-h1 {
+h1, h2 {
    /*padding-top: 1%;  */
    font-family: "Playfair Display SC", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   /* justify-content: center; */
