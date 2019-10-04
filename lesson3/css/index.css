@@ -4,9 +4,9 @@
 html {
    background-color: #c9b89d;
 }
-
-body, 
-head {
+ 
+head,
+body {
    margin: 0 auto;
    max-width: 900px;
 }
