@@ -12,7 +12,7 @@ head {
 }
 
 /******* Header for Weather Site *******/
-img {
+.weatherlogo {
    position: absolute;
    width: 10%;
    top: -1.5%;
@@ -76,6 +76,11 @@ section {
 
 p {
    font-size: 1.2em;
+}
+
+.siteplan {
+   width: 760px;
+   border: 1px solid black;
 }
 
 /******** Footer ********/
