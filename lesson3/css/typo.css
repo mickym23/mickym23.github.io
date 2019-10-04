@@ -67,6 +67,10 @@ p {
    margin: -1% 1% -1% 1%;
 }
 
+section {
+   text-align: center;
+}
+
 .libre {
    font-family: "Libre Baskerville", sans-serif;
    font-size: 1.4em;
