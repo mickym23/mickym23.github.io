@@ -2,6 +2,11 @@
    Set margins and max width
 *************************/
 html {
+   background-color: #c9b89d;
+}
+
+body, 
+head {
    margin: 0 auto;
    max-width: 900px;
 }
