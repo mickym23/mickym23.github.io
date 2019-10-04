@@ -9,7 +9,7 @@ body {
 
 img {
    position: absolute;
-   width: 10%;
+   width: 20%;
    top: -1.5%;
 }
 
@@ -122,6 +122,10 @@ a:link {
                   Desktop+ Views
 ***********************************************/
 @media only screen and (min-width: 60em) {
+
+   img {
+      width: 10%;
+   }
    nav a {
       padding: 0.5em 0.5em;
       color: white;
