@@ -30,22 +30,25 @@ header img {
 	margin: 0 0 0 17px;
 }
 
-.m {
+.motto {
 	font-style: italic;
 	color: linen;
 	margin-left: 20px;
 	font-size: 0.9rem;
+	letter-spacing: 0.3pt;
 }
 
 nav {
 	margin: 0 auto;
-	max-width: 760px;
-	background-color: #000;
+	max-width: 100%;
+	background-color: #242038;
+	
 }
 .navigation {
 	list-style: none;
 	text-align: center;
 	padding: 0;
+	margin: 0%;
 }
 .navigation li:first-child {
 	display: block;
@@ -55,16 +58,17 @@ nav {
 }
 .navigation a {
 	display: block;
-	color: #fff;
+	color: linen;
 	padding: 0.75rem;
 	text-align: center;
 	text-decoration: none;
 }
 .navigation a:hover {
-	color: #000;
-	background-color: #fff;
+	color: #725ac1;
+	background-color: linen;
 	font-weight: 700;
 }
+
 
 /* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
   <ul class="navigation responsive">
@@ -72,5 +76,7 @@ nav {
 .responsive li {
 	display: block;
 }
+
+
 
 
