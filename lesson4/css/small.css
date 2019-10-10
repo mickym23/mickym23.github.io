@@ -1,0 +1,45 @@
+/********************************
+*CSS For Preston First Draft page*
+********************************/
+html {
+   margin: 0 auto;
+   
+}
+
+header {
+   display: flex; 
+   max-width: 100%;
+   background-color: #725ac1;
+   padding: 1.6% 0% 2% 0%;
+   justify-content: center; 
+}
+
+.headerLogo {
+   position: absolute;
+   width: 20%;
+   left: 4%;
+   top: -0.2%;
+}
+
+.headerTitle,
+.headerQuote {
+   color: linen;
+   font-family: "Playfair Display SC", 'Times New Roman', Times, serif;
+}
+
+.headerText {
+   display: flex;
+   text-align: center;
+   flex-direction: column;
+   padding-left: 12%;
+}
+
+.headerTitle {
+   margin-top: -0.1%;
+   font-size: 2em;
+}
+
+.headerQuote {
+   margin-top: -1%;
+   font-size: 0.7em;
+}
