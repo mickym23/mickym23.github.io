@@ -3,43 +3,74 @@
 ********************************/
 html {
    margin: 0 auto;
-   
 }
 
 header {
-   display: flex; 
-   max-width: 100%;
-   background-color: #725ac1;
-   padding: 1.6% 0% 2% 0%;
-   justify-content: center; 
+	background-color: #725ac1;
+	padding: 5px 0;
+	display: flex;
+	align-items:center;
+	justify-content:center;
 }
 
-.headerLogo {
-   position: absolute;
-   width: 20%;
-   left: 4%;
-   top: -0.2%;
+header img {
+	width: 80px;
+	height: auto;
 }
 
-.headerTitle,
-.headerQuote {
-   color: linen;
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
    font-family: "Playfair Display SC", 'Times New Roman', Times, serif;
+   color: linen;
+	font-size: 1.6rem;
+	margin: 0 0 0 17px;
 }
 
-.headerText {
-   display: flex;
-   text-align: center;
-   flex-direction: column;
-   padding-left: 12%;
+.m {
+	font-style: italic;
+	color: linen;
+	margin-left: 20px;
+	font-size: 0.9rem;
 }
 
-.headerTitle {
-   margin-top: -0.1%;
-   font-size: 2em;
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+	background-color: #000;
+}
+.navigation {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: #fff;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+}
+.navigation a:hover {
+	color: #000;
+	background-color: #fff;
+	font-weight: 700;
 }
 
-.headerQuote {
-   margin-top: -1%;
-   font-size: 0.7em;
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+.responsive li {
+	display: block;
 }
+
+

@@ -1,12 +1,14 @@
 @media only screen and (min-width: 60em) {
-   .headerLogo {
-      width: 10%;
-      left: 24%;
-      top: 0.2%;
-   }
 
+   header {
+      display: flex;
+	align-items:center;
+	justify-content:center;
+   }
    .headerText {
-      padding-left: 0%;
+      display: flex;
+	align-items:center;
+	justify-content:center;
    }
    .headerTitle {
       margin-top: -0.1%;
