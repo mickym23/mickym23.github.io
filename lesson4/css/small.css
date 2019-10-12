@@ -99,7 +99,11 @@ footer {
 	margin: 0 auto;
 }
 
-section p {
+body div {
+	border: 0.5px solid black;
+}
+
+div p {
 	padding: 9% 0% 9% 0%;
 }
 
