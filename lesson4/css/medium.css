@@ -27,4 +27,15 @@
 	.navigation li a {
 		color: linen;
 	}
+
+
+	main, 
+	footer {
+		max-width: 70%;
+		margin: 0 auto;
+	}
+
+	
+
+	
 }

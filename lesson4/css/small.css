@@ -2,9 +2,13 @@
 *CSS For Preston First Draft page*
 ********************************/
 html {
-   margin: 0 auto;
+	margin: 0 auto;
+	background-color: #cac4ce;
 }
 
+* {
+	margin: 0;
+}
 header {
 	background-color: #725ac1;
 	padding: 5px 0;
@@ -41,8 +45,8 @@ header img {
 nav {
 	margin: 0 auto;
 	max-width: 100%;
-	background-color: #242038;
-	
+	background-color: #240238;
+	color: linen;
 }
 .navigation {
 	list-style: none;
@@ -62,19 +66,54 @@ nav {
 	padding: 0.75rem;
 	text-align: center;
 	text-decoration: none;
+	font-weight: 700;
 }
 .navigation a:hover {
-	color: #725ac1;
+	color: #240238;
 	background-color: linen;
 	font-weight: 700;
 }
 
-
-/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
-  <ul class="navigation responsive">
-  */
 .responsive li {
 	display: block;
+}
+
+main,
+footer {
+	text-align: center;
+	max-width: 100%;
+	background-color: #8d86c9;
+	color: linen;
+	margin: 0 auto;
+}
+
+.townName {
+	font-family: "Libre Baskerville", Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+	padding: 2% 0% 2% 0%;
+	border-bottom: 1px ridge #242038;
+}
+
+.container {
+	font-family: "Montserrat", 'Times New Roman', Times, serif;
+	margin: 0 auto;
+}
+
+section p {
+	padding: 2% 0% 2% 0%;
+}
+
+footer {
+	background-color: #240238;
+	color: linen;
+	font-family: "Playfair Display SC", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	margin: 0 auto;
+/*margin: -3.3% 0% 0% 0%;*/
+	padding: 2% 0% 2% 0%;
+}
+#byuiLink {
+	color: linen;
+	text-decoration: none;
 }
 
 
