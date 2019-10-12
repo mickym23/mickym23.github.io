@@ -6,4 +6,7 @@
 		margin: 0 auto;
 	}
 
+   section p {
+      padding: 4% 0% 4% 0%;
+   }
 }
