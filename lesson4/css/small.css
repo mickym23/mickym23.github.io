@@ -99,7 +99,7 @@ footer {
 	margin: 0 auto;
 }
 
-body div {
+body .container {
 	border: 0.5px solid black;
 }
 
