@@ -11,6 +11,7 @@
 
          <!-- Importing Google API -->
          <link href="https://fonts.googleapis.com/css?family=Cantata+One%7cLibre+Baskerville%7cLora%7cMontserrat%7cPlayfair+Display%7cPlayfair+Display+SC&display=swap" rel="stylesheet">
+
          <!-- Importing CSS Files -->
          <link rel = "stylesheet" href = "css/normalize.css"> 
          <link rel = "stylesheet" href = "css/small.css">   
@@ -23,59 +24,78 @@
 
    <body>
 
+      <!-- Responsive Header -->
          <header>
-               <picture>
-                  <img src="https://cdn.glitch.com/2aac8b6c-f0e7-401e-9e6a-ea976082cd21%2Fsmallerweatherlogo.png?v=1570711076366" alt="Forecast365's Logo">
-               </picture>
-               <section class="headings">
-                  <h1>Forecast365</h1>
-                  <div class="motto">Come sunshine or rain, we'll look out for you!</div>
-               </section>
+
+             <!-- Image is hosted through Glitch -->
+            <picture>
+            <img src="https://cdn.glitch.com/2aac8b6c-f0e7-401e-9e6a-ea976082cd21%2Fsmallerweatherlogo.png?v=1570711076366" alt="Forecast365's Logo">
+            </picture>
+
+            <!-- Weather Site Title and Motto -->
+            <section class="headings">
+               <h1>Forecast365</h1>
+               <div class="motto">Come sunshine or rain, we'll look out for you!</div>
+            </section>
+
          </header>
 
-         <nav>
+      <!-- Navigation Bar (One URL for Preston Page included) -->   
+      <nav>
          <ul class="navigation">
-               <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-               <li><a href="#">Home</a></li>
-               <li><a href="https://mickym23.github.io/lesson4/preston-4.html">Preston</a></li>
-               <li><a href="#">Fish Haven</a></li>
-               <li><a href="#">Soda Springs</a></li>
-               <li><a href="#">Storm Center</a></li>
-               <li><a href="#">Gallery</a></li>
-            </ul>
-         </nav>
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="https://mickym23.github.io/lesson4/preston-4.html">Preston</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+         </ul>
+      </nav>
 
+      <!-- Main Section -->
       <main>
+
+         <!-- Title of Preston, Idaho -->
          <h2 class = "townName">Preston, Idaho</h2>
+
+         <!-- Container for the first section -->
          <div class = "container">
-         <p>
+            <p>
             Hero Image / Weather Summary
-         </p>
-      </div>
+            </p>
+         </div>
 
+         <!-- Container for second section -->
          <div class = "container">
-         <p>
+            <p>
             5-day Forecast
-         </p>
-      </div>
+            </p>
+         </div>
 
+         <!-- Container for third section -->
          <div class = "container">
-         <p>
+            <p>
             Article
-         </p>
-      </div>
+            </p>
+         </div>
 
+         <!-- Container for fourth section -->
          <div class = "container">
-         <p>
+            <p>
             Contact Information
-         </p>
-      </div>
+            </p>
+         </div>
+
       </main>
 
+      <!-- Footer for Preston Page -->
       <footer>
          <p>&copy; Forecast365 | <a id="byuiLink" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a> | Mikhail Malvern Cedras</p>
+         
+         <!-- Weather Site JavaScript Date Format -->
          <p id  = "fullDate"></p>
          <script src = "js/date.js"></script>
       </footer>
-   
+   </body>
 </html>

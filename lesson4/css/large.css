@@ -1,5 +1,11 @@
+/******************************
+   Desktop+ Viewports CSS
+******************************/
 @media only screen and (min-width: 60em) {
 
+   /*********************
+         Main CSS
+   *********************/
    main, 
 	footer {
 		max-width: 70%;

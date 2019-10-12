@@ -1,5 +1,5 @@
 /********************************
-*CSS For Preston First Draft page*
+           Global CSS           
 ********************************/
 html {
 	margin: 0 auto;
@@ -9,6 +9,10 @@ html {
 * {
 	margin: 0;
 }
+
+/*******************************
+			  Header CSS
+*******************************/
 header {
 	background-color: #725ac1;
 	padding: 5px 0;
@@ -42,24 +46,31 @@ header img {
 	letter-spacing: 0.3pt;
 }
 
+/****************************
+		Navigation Bar CSS
+****************************/
 nav {
 	margin: 0 auto;
 	max-width: 100%;
 	background-color: #240238;
 	color: linen;
 }
+
 .navigation {
 	list-style: none;
 	text-align: center;
 	padding: 0;
 	margin: 0%;
 }
+
 .navigation li:first-child {
 	display: block;
 }
+
 .navigation li {
 	display: none;
 }
+
 .navigation a {
 	display: block;
 	color: linen;
@@ -68,6 +79,7 @@ nav {
 	text-decoration: none;
 	font-weight: 700;
 }
+
 .navigation a:hover {
 	color: #240238;
 	background-color: linen;
@@ -78,6 +90,9 @@ nav {
 	display: block;
 }
 
+/***************************
+   Main and .container CSS
+***************************/
 main,
 footer {
 	text-align: center;
@@ -107,14 +122,17 @@ div p {
 	padding: 9% 0% 9% 0%;
 }
 
+/****************************
+			Footer CSS
+****************************/
 footer {
 	background-color: #240238;
 	color: linen;
 	font-family: "Playfair Display SC", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	margin: 0 auto;
-/*margin: -3.3% 0% 0% 0%;*/
 	padding: 8% 0% 8% 0%;
 }
+
 #byuiLink {
 	color: linen;
 	text-decoration: none;
