@@ -130,17 +130,16 @@ div p {
 
 .summaryBlock {
 	position: absolute;
-	top: 26%; 
-	left: 3%;
-	padding: 2%;
+	top: 35%; 
+	left: 23%;
+	padding: 1%;
 	color: white;
 	border: 3px solid white;
 	background-color: rgb(211, 211, 211, 0.5);
-	width: 40%;
+	width: 20%;
 	font-weight: bold;
 	font-size: 1em;
 	font-family: "Montserrat", 'Times New Roman', Times, serif;
-
 }
 
 .summaryBlock p {
