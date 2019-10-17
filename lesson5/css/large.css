@@ -1,0 +1,33 @@
+/******************************
+   Desktop+ Viewports CSS
+******************************/
+@media only screen and (min-width: 60em) {
+
+   /*********************
+         Main CSS
+   *********************/
+   main, 
+	footer {
+		max-width: 60%;
+		margin: 0 auto;
+	}
+
+   div p {
+      padding: 4% 0% 4% 0%;
+   }
+
+   .container .townName {
+      border: none;
+   }
+   .container .weathersummary {
+      padding: 0;
+      margin: 0;
+      border: none;
+   }
+
+ 
+
+   footer {
+      padding: 2% 0% 2% 0%;
+   }
+}

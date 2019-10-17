@@ -1,0 +1,56 @@
+/************************************
+		Tablet and Kindle Viewports
+************************************/
+@media only screen and (min-width: 32.5em) {
+
+	/*********************
+			Header CSS
+	*********************/
+	header img {
+		width: 100%;
+	}
+
+	.headings h1 {
+		font-size: 3rem;
+	}
+
+	.motto {
+		letter-spacing: 2pt;
+		font-size: larger;
+		margin-left: 17px;
+   }
+	
+	/**********************
+	  Navigation Bar CSS
+	**********************/
+	.navigation {
+		display: flex;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		color: linen;
+	}
+
+	/**********************
+	 Main and .container CSS
+	**********************/
+	main, 
+	footer {
+		max-width: 70%;
+		margin: 0 auto;
+	}
+
+	.townName {
+		padding: 2% 0% 2% 0%;
+	}
+	
+	footer {
+		padding: 2% 0% 2% 0%;
+	}
+}
