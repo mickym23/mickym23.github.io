@@ -4,6 +4,7 @@
 html {
 	margin: 0 auto;
 	background-color: #cac4ce;
+	overflow: hidden;
 }
 
 * {
