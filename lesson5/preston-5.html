@@ -63,9 +63,8 @@
          <!-- Title of Preston, Idaho -->
          <h2 class = "townName">Preston, Idaho</h2>
 
-         <!-- Container for the first section -->
-         <div class = "container">
-            <p class = "weathersummary">
+         <!-- Weather Summary and Hero Image -->
+         <div class = "container weathersummary">
             <img src = "images/weatherimage.jpg" alt = "Preston Weather Summary Image">
             <div class = "summaryBlock">
                <h3>Weather Summary</h3>
@@ -75,28 +74,41 @@
                <p>Humidity: 88%</p>
                <p>Wind Speed: 19kmph</p>
             </div>
-            </p>
          </div>
 
          <!-- Container for second section -->
-         <div class = "container">
-            <p>
-            5-day Forecast
-            </p>
-         </div>
+         <div class="container weatherforecast">
+            <h3>5 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th class = "tablehead">Sat</th>
+                        <th class = "tablehead">Sun</th>
+                        <th class = "tablehead">Mon</th>
+                        <th class = "tablehead">Tue</th>
+                        <th class = "tablehead">Wed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class = "tablecell"><img src="images/sunnyicon.png" alt="snow image" class="forecast-image"><br>23&#8451;</td>
+                        <td class = "tablecell"><img src="images/partlycloudyicon.png" alt="sunny image" class="forecast-image"><br>19&#8451;</td>
+                        <td class = "tablecell"><img src="images/partlycloudyicon.png" alt="sunny image" class="forecast-image"><br>26&#8451;</td>
+                        <td class = "tablecell"><img src="images/rainyicon.png" alt="sunny image" class="forecast-image"><br>28&#8451;</td>
+                        <td class = "tablecell"><img src="images/sunnyicon.png" alt="sunny image" class="forecast-image"><br>29&#8451;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
          <!-- Container for third section -->
          <div class = "container">
-            <p>
-            Article
-            </p>
+            <div></div>
          </div>
 
          <!-- Container for fourth section -->
          <div class = "container">
-            <p>
-            Contact Information
-            </p>
+            <div></div>
          </div>
 
       </main>

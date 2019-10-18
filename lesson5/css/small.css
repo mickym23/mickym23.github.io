@@ -4,7 +4,6 @@
 html {
 	margin: 0 auto;
 	background-color: #cac4ce;
-	overflow: hidden;
 }
 
 * {
@@ -123,27 +122,33 @@ div p {
 	padding: 2% 0% 2% 0%;
 }
 
-.container .weathersummary img {
-	width: 100%;
+.weathersummary {
+	position: relative;
+	margin: 0 auto;
+}
+
+.weathersummary img {
+	max-width: 100%;
 	height: auto;
 }
 
 .summaryBlock {
+	font-family: "Montserrat", 'Times New Roman', Times, serif; 
 	position: absolute;
-	top: 35%; 
-	left: 23%;
-	padding: 1%;
-	color: white;
-	border: 3px solid white;
-	background-color: rgb(211, 211, 211, 0.5);
-	width: 20%;
-	font-weight: bold;
-	font-size: 1em;
-	font-family: "Montserrat", 'Times New Roman', Times, serif;
+    top: 0.4em;
+    left: 2em;
+    background:rgb(211, 211, 211, 0.7);
+    border: 2px solid #240238;
+	 color: #240238;
 }
 
 .summaryBlock p {
 	padding: 0;
+}
+
+.weatherforecast {
+	display: none;
+	margin-top: -0.2%;
 }
 /****************************
 			Footer CSS

@@ -16,16 +16,29 @@
       padding: 4% 0% 4% 0%;
    }
 
-   .container .townName {
+   .townName {
       border: none;
    }
-   .container .weathersummary {
-      padding: 0;
-      margin: 0;
-      border: none;
+   
+   .summaryBlock {
+      top: 2em;
+      left: 4em;
    }
 
+   .weatherforecast {
+      display: table;
+      background-color: linen;
+      color: #242038;
+      width: 100%;
+   }
  
+   table {
+      margin: 0 auto;
+   }
+   .tablehead {
+      padding-left: 9%;
+      padding-right: 10%; 
+   }
 
    footer {
       padding: 2% 0% 2% 0%;
