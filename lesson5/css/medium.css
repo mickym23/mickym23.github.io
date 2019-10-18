@@ -53,10 +53,39 @@
 	.weatherforecast {
       display: table;
       background-color: linen;
-      color: #242038;
-      width: 100%;
-   }
+		color: #242038;
+		max-width: 100%;
+		padding: 0;
+	}
+
+	.weatherforecast h1 {
+		padding: 2% 0% 2% 0%;
+		font-size: 1.5em;
+	}
+	.weatherforecast img {
+		width: 80%;
+	}
 	
+	table {
+		padding-bottom: 2%;
+
+	}
+	.tablecell {
+		border: 2px solid #242038;
+		margin: 10px;
+	}
+	
+	.articlecontent img {
+		float: right; 
+		margin: 10px;
+	}
+	
+	.articleimg1 {
+		display: block;
+	}
+	.articleimg2 {
+		display: none;
+	}
 	footer {
 		padding: 2% 0% 2% 0%;
 	}
