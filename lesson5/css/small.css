@@ -163,7 +163,8 @@ div p {
 
 .articlecontent p {
 	font-size: 1.2em;
-	top: 80%;
+	text-align: left;
+
 }
 /****************************
 			Footer CSS
