@@ -25,12 +25,7 @@
       left: 4em;
    }
 
-   .weatherforecast {
-      display: table;
-      background-color: linen;
-      color: #242038;
-      width: 100%;
-   }
+   
  
    table {
       margin: 0 auto;

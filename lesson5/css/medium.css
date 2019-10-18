@@ -49,6 +49,13 @@
 	.townName {
 		padding: 2% 0% 2% 0%;
 	}
+
+	.weatherforecast {
+      display: table;
+      background-color: linen;
+      color: #242038;
+      width: 100%;
+   }
 	
 	footer {
 		padding: 2% 0% 2% 0%;
