@@ -11,6 +11,28 @@ html {
 }
 
 /*******************************
+			Banner CSS				
+*******************************/
+.saturdaybanner {
+	max-width: auto;
+	background-color: linen;
+	color: #242038;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: "Playfair Display SC", 'Times New Roman', Times, serif;
+	padding: 1.5%;
+	display: none;
+}
+
+.contact {
+	background-color: linen;
+	color: #242038;
+}
+.logo {
+	width: 10%;
+}
+
+/*******************************
 			  Header CSS
 *******************************/
 header {
@@ -164,7 +186,7 @@ div p {
 .articlecontent p {
 	font-size: 1.2em;
 	text-align: left;
-
+	padding: 2%;
 }
 /****************************
 			Footer CSS
