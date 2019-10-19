@@ -14,7 +14,7 @@ html {
 			Banner CSS				
 *******************************/
 .saturdaybanner {
-	max-width: auto;
+	width: auto;
 	background-color: linen;
 	color: #242038;
 	text-align: center;
