@@ -36,7 +36,6 @@
       margin: 0 auto;
    }
 
-
    .tablehead {
       padding-left: 9%;
       padding-right: 10%; 
@@ -45,6 +44,7 @@
    .logo {
       width:7%;
    }
+   
    footer {
       padding: 2% 0% 2% 0%;
    }

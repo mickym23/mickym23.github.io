@@ -118,7 +118,7 @@ nav {
 }
 
 /***************************
-   Main and .container CSS
+   Main and Container CSS
 ***************************/
 main,
 footer {
@@ -187,6 +187,11 @@ div p {
 	font-size: 1.2em;
 	text-align: left;
 	padding: 2%;
+}
+
+.articlep {
+	text-align: left;
+	padding-left: 2%;
 }
 
 .maps {
