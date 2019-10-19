@@ -188,6 +188,20 @@ div p {
 	text-align: left;
 	padding: 2%;
 }
+
+.maps {
+	display: none;
+}
+
+.logo {
+	width: 15%;
+	padding: 1% 1% 0% 1%; 
+}
+
+.contact h1 {
+	padding: 5% 0% 2% 0%;
+}
+
 /****************************
 			Footer CSS
 ****************************/
