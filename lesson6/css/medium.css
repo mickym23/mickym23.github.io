@@ -1,0 +1,110 @@
+/************************************
+		Tablet and Kindle Viewports
+************************************/
+@media only screen and (min-width: 30em) {
+
+	/*********************
+			Header CSS
+	*********************/
+	header img {
+		width: 100%;
+	}
+
+	.headings h1 {
+		font-size: 3rem;
+	}
+
+	.motto {
+		letter-spacing: 2pt;
+		font-size: larger;
+		margin-left: 17px;
+   }
+	
+	/**********************
+	  Navigation Bar CSS
+	**********************/
+	.navigation {
+		display: flex;
+	}
+
+	.navigation li:first-child {
+		display: none;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+	.navigation li a {
+		color: linen;
+	}
+
+	/**********************
+	 Main and .container CSS
+	**********************/
+	main, 
+	footer {
+		max-width: 70%;
+		margin: 0 auto;
+	}
+
+	.townName {
+		padding: 2% 0% 2% 0%;
+	}
+
+	.weatherforecast {
+      display: table;
+      background-color: linen;
+		color: #242038;
+		max-width: 100%;
+		padding: 0;
+	}
+
+	.weatherforecast h1 {
+		padding: 2% 0% 2% 0%;
+		font-size: 1.5em;
+	}
+
+	.weatherforecast img {
+		width: 80%;
+	}
+	
+	table {
+		padding-bottom: 2%;
+	}
+	
+	.tablecell {
+		border: 2px solid #242038;
+		margin: 10px;
+	}
+	
+	.articlecontent img {
+		float: right; 
+		margin: 10px;
+	}
+	
+	.articleimg1 {
+		display: block;
+	}
+
+	.articleimg2 {
+		display: none;
+	}
+
+	.maps {
+		display: block;
+		float: left;
+		max-width: 30%;
+		padding-left: 6%;
+	}
+
+	.logo {
+		width: 9%;
+		padding: 1% 1% 3% 1%; 
+	}
+
+	footer {
+		padding: 2% 0% 2% 0%;
+	}
+}
