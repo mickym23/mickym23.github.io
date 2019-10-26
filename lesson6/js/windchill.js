@@ -1,6 +1,6 @@
 // Getting Wind Speed and Temperature Variables
-var wspeed = parseFloat(document.getElementById("wspeed").innerHTML);
-var temp = parseFloat(document.getElementById("temp").innerHTML);
+var wspeed = parseFloat(document.getElementById("wspeed").textContent);
+var temp = parseFloat(document.getElementById("temp").textContent);
 
 // IF-ELSE statement to determine the Wind Chill
 if( wspeed > 3 && temp <= 50) {

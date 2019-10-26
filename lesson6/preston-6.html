@@ -9,17 +9,11 @@
          <meta name = "description" content = "Preston Second Draft, Week 5, CIT230 Web Frontend Development, Mikhail Cedras">
          <title>Preston | Forecast365</title> 
 
-         <!-- Importing Google API -->
-         <link href="https://fonts.googleapis.com/css?family=Cantata+One%7cLibre+Baskerville%7cLora%7cMontserrat%7cPlayfair+Display%7cPlayfair+Display+SC&display=swap" rel="stylesheet">
-
          <!-- Importing CSS Files -->
          <link rel = "stylesheet" href = "css/normalize.css"> 
          <link rel = "stylesheet" href = "css/small.css">   
          <link rel = "stylesheet" href = "css/medium.css">
          <link rel = "stylesheet" href = "css/large.css">
-
-         <!-- Importing JavaScript File for Navigation -->
-         <script src = "js/menu.js"></script>
 
          <!-- Importing favicon.io file -->
          <link rel = "shortcut icon" href = "images/favicon.ico">
@@ -51,7 +45,7 @@
          <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
-            <li><a class = "active" href="https://mickym23.github.io/lesson6/preston-6.html">Preston</a></li>
+            <li><a class = "active" href = "https://mickym23.github.io/lesson6/preston-6.html">Preston</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Storm Center</a></li>
@@ -67,14 +61,18 @@
 
          <!-- Weather Summary and Hero Image -->
          <div class = "container weathersummary">
-            <img src = "images/weatherimage.jpg" alt = "Preston Weather Summary Image">
+            <picture>
+            <source srcset = "images/prestonMEDIUM(400px).jpeg" media = "(min-width: 32.5em) and (max-width: 50em)">
+            <source srcset = "images/prestonLARGE(816px).jpg" media = "(min-width: 50em)">
+            <img  class = "heroimage" srcset = "images/prestonSMALL(300px).jpeg" alt = "Preston Weather Summary Image">
+            </picture>
             <div class = "summaryBlock">
                <h3>Weather Summary</h3>
                <p>Currently: Overcast</p>
                <p>High: <span id = "temp">35</span> &#8457;</p>
                <p>Wind Chill: <span id = "windchill"></span></p>
                <p>Humidity: 88%</p>
-               <p>Wind Speed: <span id = "wspeed">19</span> km/h</p>
+               <p>Wind Speed: <span id = "wspeed">19</span> mph</p>
             </div>
          </div>
 
@@ -147,15 +145,28 @@
       <!-- Footer for Preston Page -->
       <footer>
          <p>&copy; Forecast365 | <a id="byuiLink" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a> | Mikhail Malvern Cedras</p>
-         
-         <!-- Weather Site JavaScript Date Format -->
+
          <p id  = "fullDate"></p>
-         <script src = "js/date.js"></script>
       </footer>
+
+      <!-- Weather Site JavaScript Date Format -->
+      <script src = "js/date.js"></script>
+
+      <!-- Importing JavaScript File for Navigation -->
+      <script src = "js/menu.js"></script>
 
       <!-- Saturday Preston Pancakes -->
       <script src = "js/saturdayevent.js"></script>
 
+      <!-- Added WIndchill Javascript File -->
       <script src=  "js/windchill.js"></script>
+
+      <!-- Importing Web Font JS -->
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+      <!-- Running Web Loader Function -->
+      <script src= "js/webloader.js"></script>
+
+
    </body>
 </html>

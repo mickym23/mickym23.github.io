@@ -149,8 +149,8 @@ div p {
 	margin: 0 auto;
 }
 
-.weathersummary img {
-	max-width: 100%;
+.weathersummary .heroimage {
+	width: 100%;
 	height: auto;
 }
 
