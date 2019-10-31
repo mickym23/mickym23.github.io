@@ -1,7 +1,7 @@
 // Creating options object
 var options = {
     lazyImages: document.querySelectorAll("img[data-src]"),
-    rootMargin:  "0% 0% 15% 0%",
+    rootMargin:  "0%",
     threshold: 1
 };
 
