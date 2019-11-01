@@ -107,7 +107,6 @@ nav {
 main {
 	display: grid;
 	grid-template-columns: 1fr;
-/*=	grid-row-gap: 1%;*/
    background-color: #cac4ce;
 	justify-items: center; 
 	padding: 2% 0% 2% 0%;
@@ -116,14 +115,13 @@ main {
 main figure {
    border: 4px solid beige;
    padding: 0.5% 0% 0.5% 0%;
-   max-width: auto;
 }
 
 main figure img {
 	margin-top: -1%;
-   max-width: auto;
    width: 100%;
 }
+
 figure figcaption {
    text-align: center;
    font-family: "Playfair Display SC", 'Times New Roman', Times, serif;
@@ -136,6 +134,7 @@ figure figcaption {
 figure img[data-src] {
    filter: blur(0.3em);
 }
+
 figure img {
    filter: blur(0em);
    transition: filter 0.7s;
@@ -145,7 +144,7 @@ figure img {
 			Footer CSS
 ****************************/
 footer {
-	max-width: auto;
+	width:100%;
    text-align: center;
 	background-color: #240238;
 	color: linen;
