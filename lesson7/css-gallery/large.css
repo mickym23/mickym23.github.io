@@ -18,7 +18,11 @@ picture:hover {
    z-index: 1;
 }
 
+/*************************
+      Footer CSS
+*************************/
 footer {
    margin: 0 auto;
    padding: 2% 0% 2% 0%;
+}
 }
