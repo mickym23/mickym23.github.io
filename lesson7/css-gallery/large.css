@@ -1,7 +1,7 @@
 /******************************
    Desktop+ Viewports CSS
 ******************************/
-@media only screen and (min-width: 1230px) {
+@media only screen and (min-width: 60em) {
 
 /****************************
          Main CSS
@@ -12,7 +12,7 @@ main {
 }
 
 
-picture:hover {
+figure:hover {
    box-shadow: 0px 3px 23px 3px black;
    transform: scale(1.02);
    z-index: 1;
