@@ -90,10 +90,6 @@ nav {
 	font-weight: 700;
 }
 
-.navigation li a.active {
-	background-color: #b89191;
-	color: white;
-}
 
 .navigation a:hover {
 	color: #240238;
