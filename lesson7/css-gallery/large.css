@@ -8,8 +8,15 @@
 ****************************/
 main {
    grid-template-columns: 1fr 1fr 1fr;
+   grid-row-gap: 5px;
 }
 
+
+picture:hover {
+   box-shadow: 10px 10px 10px 10px;
+   transform: scale(1.02);
+   z-index: 1;
+}
 
 footer {
    margin: 0 auto;
