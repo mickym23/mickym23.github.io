@@ -24,7 +24,7 @@ thead th{
 
 th, td {
    font-size: 1.2em;
-   padding: 3%;
+   padding: 6px 5px 6px 5px;
 }
  thead, tfoot {
    background-color: #7fb9c2;
