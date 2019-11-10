@@ -10,8 +10,8 @@
 		width: 100%;
 	}
 
-	.headings h1 {
-		font-size: 3rem;
+	.headings h2 {
+		font-size: 2.1rem;
 	}
 
 	.motto {
@@ -47,6 +47,11 @@
 	main {
 		width: 70%;
 	}
+
+	h2 {
+		font-size: 2em;
+	}
+
    /*********************
          Footer CSS
    *********************/

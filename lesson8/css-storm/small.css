@@ -53,7 +53,7 @@ header img {
 	flex-direction: column;
 }
 
-.headings h1 {
+.headings h2 {
    font-family: "Playfair Display SC", 'Times New Roman', Times, serif;
    color: linen;
 	font-size: 1.6rem;
@@ -129,9 +129,14 @@ main {
 	padding-top: 1%;
 }
 
-h1 {
+h2 {
 	text-align: center;
 	color: linen;
+	font-size: 1.5em;
+}
+
+.weatherName {
+	font-size: 3em;
 }
 
 form {
