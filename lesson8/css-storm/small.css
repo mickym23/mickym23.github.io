@@ -233,8 +233,8 @@ form label.top textarea {
 	font-family: 'Times New Roman', Times, serif;
 }
 
-.email {
-	color: grey;
+form label.email input::placeholder {
+	color: gray;
 }
 /****************************
 		Thank You Page
