@@ -256,7 +256,7 @@ form label.email input::placeholder {
 			Footer CSS
 ****************************/
 footer {
-   width:70%;
+   width:100%;
    text-align: center;
 	background-color: #240238;
 	color: linen;
