@@ -56,34 +56,53 @@
 
       <main>
 
+         <!-- Header for Storm Center-->
          <h1>Storm Center</h1>
 
+            <!-- If submission successful, redirect to thanks.html with GET method-->
             <form method="GET" action="thanks.html">
 
+               <!-- Reporter Details Section -->
                <fieldset>
                   <legend>Reporter Details</legend>
-                  <label class="top">Full Name* <input type="text" name="name" pattern="[A-Za-z ]{5,}" required></label>
+
+                  <!-- Full Name Input -->
+                  <label class="top">Full Name* <input type="text" name="name" pattern="[A-Za-z]{5}" required></label>
+
+                  <!-- Phone Number Input -->
                   <label class="top">Phone Number* <input type="tel" name="phone" required></label>
+
+                  <!-- Zip Code Input -->
                   <label class="top">Zip Code* <input type="number" name="zip" required></label>
+
+                  <!-- Email Address Input -->
                   <label class="top">Email Address <input type="email" name="email" placeholder="someone123@company.com"></label>
                </fieldset><br>
 
+               <!-- Storm Details Section -->
                <fieldset>
                   <legend>Storm Details</legend>
+
+                  <!-- Storm Date Input -->
                   <label class="top">Storm Date <input type="date" name="stormDate"></label>
-                  <label class="top">Storm Type<input type="text" list="storms" name="stormType" pattern="[A-Za-z ]{4,}"><datalist id="storms">
+
+                  <!-- Storm Type Input with datalist options -->
+                  <label class="top">Storm Type<input type="text" list="storms" name="stormType"><datalist id="storms">
                      <option value="Flash Flood">Flash Flood</option>
                      <option value="Hail">Hail</option>
                      <option value="Hurricane">Hurricane</option>
                      <option value="Thunderstorm">Thunderstorm</option>
                      <option value="Tornado">Tornado</option>
                   </datalist></label>
+
+                  <!-- Storm Severity Slider -->
                   <label class="flexStorm" for="rating">Storm Severity (1 - 10)&nbsp;&nbsp;&nbsp;<input type="range" id="rating" value="5" min="1" 
                      max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" 
                      onchange="adjustRating(this.value)">
                      <span id="ratingvalue">5</span>
                   </label>
                
+                  <!-- Tickmark datalist -->
                   <datalist id="tickmarks">
                   <option value="0">
                   <option value="1">
@@ -98,25 +117,29 @@
                   <option value="10">
                   </datalist>
 
-                  <label class="top">Storm Region  <select name="subject">
+                  <!-- Storm Region Selector, with Default 'Select Region' -->
+                  <label class="top">Storm Region  <select name="stormRegion">
                      <option value="">Select Region</option>
                      <option value="fishhaven">Fish Haven</option>
                      <option value="preston">Preston</option>
                      <option value="sodasprings">Soda Springs</option>
                   </select></label>
 
-                  <div>User in Danger</div>
+                  <!-- User In Danger Radio Buttons -->
+                  <div>User in Danger Level</div>
                   <label class="radioB"><input type="radio" name="audience" value="yes"> Yes</label>
                   <label class="radioB"><input type="radio" name="audience" value="maybe"> Maybe</label>
                   <label class="radioB"><input type="radio" name="audience" value="no"> No</label>
                </fieldset><br>
 
-
+               <!-- Additional Details Section -->
                <fieldset>
                  <legend>Additional Details</legend>
-                 <label class="top">Please enter additional information<br> <textarea name="comments" placeholder = "Type here..."
+                 <label class="top">Please enter additional information<br> <textarea name="addDetails" placeholder = "Type here..."
                   maxlength="2048"></textarea></label>
                </fieldset><br>
+
+               <!-- Submit Button -->
                <input class="submitBtn" type="submit" value="Report Storm">
             </form>
       </main>
@@ -126,7 +149,7 @@
       <footer>
             <p>&copy; Forecast365 | <a id="byuiLink" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a> | Mikhail Malvern Cedras</p>
             <p id  = "fullDate"></p>
-         </footer>
+      </footer>
 
       <!-- Weather Site JavaScript Date Format -->
       <script src = "js-storm/date.js"></script>
@@ -145,6 +168,5 @@
 
       <!-- JavaScript file Changes Numbers on Scale -->
       <script src = "js-storm/ratingadjust.js"></script>
-
    </body>
 </html>
