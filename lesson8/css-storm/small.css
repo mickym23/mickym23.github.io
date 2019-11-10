@@ -129,7 +129,6 @@ main {
 	padding-top: 1%;
 }
 
-
 h1 {
 	text-align: center;
 	color: linen;
@@ -139,6 +138,7 @@ form {
 	 padding-left: 3%;
 	 padding-right: 3%;
 }
+
 form fieldset {
 	margin: 0 auto;
 	border: 1px solid linen;
@@ -151,12 +151,14 @@ form legend {
 	margin: 0 2%;
 	padding: 0 2%;
 }
+
 form label.top, form div, form label.slide {
 	display: block;
 	padding-top: 3%;
 	color: linen;
 	font-size: 1.4em;
 }
+
 form label.top input, form label.top select {
 	display: block;
 	font-size: 1rem;
@@ -183,6 +185,7 @@ form label.radioB {
 	padding: .75rem 0;
 	color: linen;
 }
+
 form label.slide input {
 	display: block;
 	font-size: 1rem;
@@ -193,6 +196,7 @@ form label.slide input {
 	width: 100%;
 	max-width: 20rem;
 }
+
 form input.submitBtn {
 	border: none;
 	background-color: linen;
@@ -203,9 +207,11 @@ form input.submitBtn {
 	width: 96%;
 	max-width: 20rem;
 }
+
 form label.top input:required {
 	border-left: red solid 6px;
 }
+
 form label.top input:required:valid {
 	border-left: green solid 6px;
 }
@@ -218,6 +224,7 @@ form label.top input {
 	color: black;
 	font-family: 'Times New Roman', Times, serif;
 }
+
 form label.top textarea {
 	margin: 2% 0;
 	width: 100%;
@@ -226,6 +233,9 @@ form label.top textarea {
 	font-family: 'Times New Roman', Times, serif;
 }
 
+.email {
+	color: grey;
+}
 /****************************
 		Thank You Page
 *****************************/
