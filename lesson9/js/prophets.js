@@ -6,10 +6,7 @@ fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
-  .then(function (jsonObject) {
-    
-    // Print table in console
-    console.table(jsonObject);  
+  .then(function (jsonObject) { 
 
     // Setting prophets variable to access JSON
     const prophets = jsonObject['prophets'];
