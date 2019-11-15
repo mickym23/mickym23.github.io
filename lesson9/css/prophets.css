@@ -41,6 +41,13 @@ img {
    max-width: 40%;
 }
 
+footer {
+   color: white;
+   text-align: center;
+   font-size: 1.4em;
+   padding-top: 2%;
+   padding-bottom: 2%
+}
 /****** Tablet View ********/
 @media only screen and (min-width: 32.5em) {
    main .cards {
