@@ -1,4 +1,4 @@
-// BYU-I JSON link
+// BYU-I JSON
 const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
 
 // Retrieving JSON
@@ -6,7 +6,10 @@ fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
-  .then(function (jsonObject) { 
+  .then(function (jsonObject) {
+    
+    // Print table in console
+    console.table(jsonObject);  
 
     // Setting prophets variable to access JSON
     const prophets = jsonObject['prophets'];
