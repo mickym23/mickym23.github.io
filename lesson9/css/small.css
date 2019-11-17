@@ -118,7 +118,7 @@ nav {
 ****************************/
 main {
    text-align: center;
-   max-width: auto;
+   max-width: 100%;
    background-color: #cac4ce;
 }
 
