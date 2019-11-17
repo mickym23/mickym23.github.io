@@ -6,9 +6,6 @@ fetch (requestURL)
       return response.json();
    }) .then (function(jsonObject) {
 
-      // Print out table within console
-      console.table(jsonObject);
-
       // Access 'towns' JSON array
       const arr = jsonObject['towns'];
 
