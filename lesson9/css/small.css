@@ -175,6 +175,14 @@ main section img {
 .wireframes h1 {
    font-family: "Calligraffitti", Arial, Helvetica, sans-serif;
 }
+
+.wireframes a{
+   font-size: 1.5em;
+}
+
+.wireframes {
+   padding: 5%;
+}
 /****************************
 			Footer CSS
 ****************************/
