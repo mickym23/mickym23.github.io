@@ -2,7 +2,6 @@
    Desktop+ Viewports CSS
 ******************************/
 @media only screen and (min-width: 1200px) {
-
    
 /******************
       Main CSS
@@ -18,7 +17,7 @@ div.cards {
    padding: 2.5% 5% 0% 5%;
 }
 
-div.cards section{
+div.cards section {
    box-shadow: 5px 5px 5px #224400;
    border: 1px solid black;
    height: 98%;

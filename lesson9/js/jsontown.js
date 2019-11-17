@@ -1,36 +1,54 @@
+// BYU-I JSON URL Link for Home Page Town Data
 const requestURL ="https://byui-cit230.github.io/weather/data/towndata.json";
-fetch(requestURL)
-    .then(function (response){
-        return response.json();
-    })
-    .then(function(jsonObject){
-        console.table(jsonObject);
-        const towns = jsonObject['towns'];
-        for(let i=0; i<towns.length; i++){
-          if(towns[i].name ==="Fish Haven" || towns[i].name ==="Preston" || towns[i].name === "Soda Springs"){  
+
+fetch (requestURL)
+   .then (function (response) {
+      return response.json();
+   }) .then (function(jsonObject) {
+
+      // Print out table within console
+      console.table(jsonObject);
+
+      // Access 'towns' JSON array
+      const arr = jsonObject['towns'];
+
+      // Run a FOR loop through each array  to create all three cards
+      for (let i = 0; i < towns.length; i++) {
+          // IF statement to loop through only Fish Haven, Preston, and Soda Springs town names 
+          if (arr[i].name === "Fish Haven" || arr[i].name === "Preston" || arr[i].name === "Soda Springs") {  
+          
+          // Creating different HTML tag variables
           let card = document.createElement('section');
-          let h2 = document.createElement('h1');
-          let motto = document.createElement('h3');
-          let year = document.createElement('p');
-          let pop = document.createElement('p');
-          let averageR = document.createElement('p');
+          let h1 = document.createElement('h1');
+          let h3 = document.createElement('h3');
+          let p1 = document.createElement('p');
+          let p2 = document.createElement('p');
+          let p3 = document.createElement('p');
           let img = document.createElement('img'); 
           let text = document.createElement('div');
-          h2.textContent= towns[i].name;
-          motto.textContent = towns[i].motto;
-          year.textContent = "Year Founded: " + towns[i].yearFounded;
-          pop.textContent ="Current Population: " + towns[i].currentPopulation;
-          averageR.textContent ="Average Rainfall: " + towns[i].averageRainfall;
-          img.setAttribute('src','images/'+towns[i].photo);
-          img.setAttribute('alt',towns[i].name + " image");
-          text.appendChild(h2);
-          text.appendChild(motto);
-          text.appendChild(year);
-          text.appendChild(pop);
-          text.appendChild(averageR);
+
+          // Storing JSON data in HTML tag variables
+          h1.textContent = arr[i].name;
+          h3.textContent = arr[i].motto;
+          p1.textContent = "Year Founded: " + arr[i].yearFounded;
+          p2.textContent ="Current Population: " + arr[i].currentPopulation;
+          p3.textContent ="Average Rainfall: " + arr[i].averageRainfall;
+
+          // Setting the SRC and ALT for images (locally stored)
+          img.setAttribute('src', 'images/'+ arr[i].photo);
+          img.setAttribute('alt', "Iconic Image of " + arr[i].name);
+
+          // Creating entire content text
+          text.appendChild(h1);
+          text.appendChild(h3);
+          text.appendChild(p1);
+          text.appendChild(p2);
+          text.appendChild(p3);
+
+          // Adding to section element
           card.appendChild(text);
           card.appendChild(img);
+
+          // Apply to .cards class 
           document.querySelector('div.cards').appendChild(card);
-          }else{continue}
-        }
-    });
+          }}});

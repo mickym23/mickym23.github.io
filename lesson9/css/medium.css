@@ -56,24 +56,25 @@
 	div.cards section {
 		margin: 0 auto;
 	}
-  div.cards section div{
+
+  div.cards section div {
 		grid-area: content;
   }
 
-  div.card section img{
+  div.card section img {
 		grid-area: image;
   }
-	div.cards section{
+
+  div.cards section {
 		display: grid;
-		grid-template-columns: 1fr 1fr ;
+		grid-template-columns: 1fr 1fr;
 		grid-template-areas: "content image";
 		padding-bottom: 1%;
 	}
 
-	div.cards section:nth-child(2) {
+  div.cards section:nth-child(2) {
 		display: grid;
 		grid-template-columns: 1fr 1fr ;
 		grid-template-areas: "image content";
 	}
-
 }
