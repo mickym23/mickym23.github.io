@@ -13,7 +13,7 @@ fetch (requestURL)
       const arr = jsonObject['towns'];
 
       // Run a FOR loop through each array  to create all three cards
-      for (let i = 0; i < towns.length; i++) {
+      for (let i = 0; i < arr.length; i++) {
           // IF statement to loop through only Fish Haven, Preston, and Soda Springs town names 
           if (arr[i].name === "Fish Haven" || arr[i].name === "Preston" || arr[i].name === "Soda Springs") {  
           
