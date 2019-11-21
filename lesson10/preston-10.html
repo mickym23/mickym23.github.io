@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+
+<html lang="en-us">
+
+   <head>
+         <!-- Meta Information -->
+         <meta charset = "UTF-8">
+         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+         <meta name = "description" content = "Preston Third Draft, Week 6, CIT230 Web Frontend Development, Mikhail Cedras">
+         <title>Preston | Forecast365</title> 
+
+         <!-- Importing CSS Files -->
+         <link rel = "stylesheet" href = "css/normalize.css"> 
+         <link rel = "stylesheet" href = "css/small.css">   
+         <link rel = "stylesheet" href = "css/medium.css">
+         <link rel = "stylesheet" href = "css/large.css">
+
+         <!-- Importing favicon.io file -->
+         <link rel = "shortcut icon" href = "images/favicon.ico">
+
+   </head>
+
+   <body>
+
+      <!-- Banner that displays on Fridays -->
+      <div class = "saturdaybanner">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+      <!-- Responsive Header -->
+         <header>
+
+             <!-- Image is hosted through Glitch -->
+            <picture>
+            <img src="https://cdn.glitch.com/2aac8b6c-f0e7-401e-9e6a-ea976082cd21%2Fsmallerweatherlogo.png?v=1570711076366" alt="Forecast365's Logo">
+            </picture>
+
+            <!-- Weather Site Title and Motto -->
+            <section class="headings">
+               <h1>Forecast365</h1>
+               <div class="motto">Come sunshine or rain, we'll look out for you!</div>
+            </section>
+
+         </header>
+
+      <!-- Navigation Bar (One URL for Preston Page included) -->   
+      <nav>
+         <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="https://mickym23.github.io/lesson9/index.html">Home</a></li>
+            <li><a class = "active" href = "https://mickym23.github.io/lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="https://mickym23.github.io/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://mickym23.github.io/lesson7/gallery-7.html">Gallery</a></li>
+         </ul>
+      </nav>
+
+      <!-- Main Section -->
+      <main>
+
+         <!-- Title of Preston, Idaho -->
+         <h2 class = "townName">Preston, Idaho</h2>
+
+         <!-- Weather Summary and Hero Image -->
+         <div class = "container weathersummary">
+            <picture>
+            <img  class = "heroimage" src = "images/weatherbackgroundimage.jpg" alt = "Preston Weather Summary Image">
+            </picture>
+            <div class = "summaryBlock">
+               <h3>Weather Summary</h3>
+               <p>High: <span id = "highTemp temp"></span> &#8457;</p>
+               <p>Wind Chill: <span id = "windchill"></span></p>
+               <p>Humidity: <span id = "humidity"></span></p>
+               <p>Wind Speed: <span id = "wspeed"></span> mph</p>
+            </div>
+         </div>
+
+         <!-- Weather Forecast Table -->
+         <section class="container weatherforecast">
+            <h1>5 Day Forecast</h1>
+            <table>
+                <thead>
+                    <tr>
+                       <!-- Table Headings -->
+                        <th class = "tablehead">Sun</th>
+                        <th class = "tablehead">Mon</th>
+                        <th class = "tablehead">Tue</th>
+                        <th class = "tablehead">Wed</th>
+                        <th class = "tablehead">Thurs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       <!-- Table Cells -->
+                        <td class = "tablecell"><img src="" alt="Sunny Icon"><br>29&#8457;</td>
+                        <td class = "tablecell"><img src="" alt="Partly Cloudy Icon"><br>22&#8457;</td>
+                        <td class = "tablecell"><img src="" alt="Partly Cloudy Icon"><br>18&#8457;</td>
+                        <td class = "tablecell"><img src="" alt="Rainy Icon"><br>24&#8457;</td>
+                        <td class = "tablecell"><img src="" alt="Sunny Icon"><br>30&#8457;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+         <!-- Article Section -->
+         <section class = "container">
+               <h2 class = "articletitle"><strong>Hiking on Preston's Mountains</strong></h2><br>
+               <p class = "articlep" ><em>By Amy Winston</em></p>
+            <div class = "articlecontent">
+                  <img class = "articleimg1" src = "images/articleimage.jpg" alt = "Hikers in the Preston Mountains">
+               <p>Abundantly fowl i moveth replenish you&#39;ll darkness bring they&#39;re for saying
+                   beast over face lights, form him, yielding. Saying over. Upon be, fruitful very it
+                    won&#39;t. Shall whose air was our. Stars meat morning air every whose moved 
+                    without own beast. Man evening hath beast darkness. So in so years fowl fifth 
+                    creature spirit Brought signs given brought yielding isn&#39;t had stars. Great.
+                     Own were yielding spirit have dry, fly doesn&#39;t hath. Yielding subdue 
+                     gathering evening, life forth called. Be under moveth seas that place called
+                      meat gathering. Created. I.</p>
+                  <img class = "articleimg2" src = "images/articleimage.jpg" alt = "Hikers in the Preston Mountains">
+            </div>
+         </section>
+
+         <!-- Contact Information -->
+         <section class = "container contact">
+            <h1>Contact Information</h1>
+            <div>
+               <img class = "maps" src = "images/googlemapsimage.jpg" alt = "Google Maps Image">
+               
+               <div class = "right">
+                  <h3>Forecast365</h3>
+                  <p>22E 3rd N <br>
+                  Preston, ID 83263<br>
+                  &#9742; 123-456-789<br>
+                  &#9993; weather@forecast354.org<br><br>
+               <a class = "socialmedia" href = "#" target = "_blank"><img class = "logo" src = "images/facebooklogo.png" alt = "Facebook Logo"></a>
+               <a class = "socialmedia" href = "#" target = "_blank"><img class = "logo" src = "images/instagramlogo.png" alt = "Instagram Logo"></a>
+               </div>
+
+            </div>
+         </section>
+
+      </main>
+
+      <!-- Footer for Preston Page -->
+      <footer>
+            <p>&copy; Forecast365 | <a id="byuiLink" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a> | Mikhail Malvern Cedras</p>
+   
+            <p id  = "fullDate"></p>
+         </footer>
+
+      <!-- Weather Site JavaScript Date Format -->
+      <script src = "js/date.js"></script>
+
+      <!-- Importing JavaScript File for Navigation -->
+      <script src = "js/menu.js"></script>
+
+      <!-- Saturday Preston Pancakes -->
+      <script src = "js/saturdayevent.js"></script>
+      
+      <script src = "js/preston-api.js"></script>
+
+      <!-- Added WIndchill Javascript File -->
+      <script src=  "js/windchill.js"></script>
+
+      <!-- Importing Web Font JS -->
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+      <!-- Running Web Loader Function -->
+      <script src= "js/webloader.js"></script>
+
+   </body>
+</html>
