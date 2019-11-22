@@ -35,6 +35,10 @@ th, td {
    background: #e7ffed;
 }
 
+tbody tr:nth-child(5) td:nth-child(1) {
+   font-style: italic;
+}
+
 .darkBlueColor {
    background-color:#628ca6;
    color: white;
@@ -44,6 +48,7 @@ thead .darkBlueColor {
    font-size: 0.7em;
 }
 
- tfoot {
+tfoot {
     font-size: 0.7em;
- }
+    font-weight: bold;
+}
