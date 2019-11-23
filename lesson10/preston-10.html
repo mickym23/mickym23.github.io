@@ -66,39 +66,16 @@
             </picture>
             <div class = "summaryBlock">
                <h3>Weather Summary</h3>
-               <p>High: <span id = "temp"></span> &#8457;</p>
+               <p>Current: <span id = "cTemp"></span> &#8457;</p>
+               <p>High: <span id = "hTemp"></span> &#8457;</p>
                <p>Wind Chill: <span id = "windchill"></span></p>
                <p>Humidity: <span id = "humidity"></span></p>
                <p>Wind Speed: <span id = "wspeed"></span> mph</p>
             </div>
          </div>
-
-         <!-- Weather Forecast Table -->
-         <section class="container weatherforecast">
-            <h1>5 Day Forecast</h1>
-            <table>
-                <thead>
-                    <tr>
-                       <!-- Table Headings -->
-                        <th class = "tablehead">Sun</th>
-                        <th class = "tablehead">Mon</th>
-                        <th class = "tablehead">Tue</th>
-                        <th class = "tablehead">Wed</th>
-                        <th class = "tablehead">Thurs</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                       <!-- Table Cells -->
-                        <td class = "tablecell"><img src="" alt="Sunny Icon"><br>29&#8457;</td>
-                        <td class = "tablecell"><img src="" alt="Partly Cloudy Icon"><br>22&#8457;</td>
-                        <td class = "tablecell"><img src="" alt="Partly Cloudy Icon"><br>18&#8457;</td>
-                        <td class = "tablecell"><img src="" alt="Rainy Icon"><br>24&#8457;</td>
-                        <td class = "tablecell"><img src="" alt="Sunny Icon"><br>30&#8457;</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+         
+         <!-- Forecast generated through JSON and JS -->
+         <div class="forecast"></div>              
 
          <!-- Article Section -->
          <section class = "container">
@@ -142,7 +119,7 @@
       <!-- Footer for Preston Page -->
       <footer>
             <p>&copy; Forecast365 | <a id="byuiLink" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a> | Mikhail Malvern Cedras</p>
-   
+            <p><a href = "https://openweather.org">OpenWeather</a> supplies all live weather information</p>
             <p id  = "fullDate"></p>
          </footer>
 
@@ -154,15 +131,17 @@
 
       <!-- Saturday Preston Pancakes -->
       <script src = "js/saturdayevent.js"></script>
-      
+
       <!-- Weather API + Windchill + 5-day Forecast -->
       <script src = "js/preston-api.js"></script>
+
+      <!-- Five Day Forecast JS -->
+      <script src = "js/five-day-forecast.js"></script>
 
       <!-- Importing Web Font JS -->
       <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 
       <!-- Running Web Loader Function -->
       <script src= "js/webloader.js"></script>
-
    </body>
 </html>

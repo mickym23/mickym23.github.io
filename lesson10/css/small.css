@@ -173,9 +173,8 @@ picture {
 	padding: 0;
 }
 
-.weatherforecast {
+.forecast {
 	display: none;
-	margin-top: -0.2%;
 }
 
 .articletitle {
@@ -223,8 +222,8 @@ footer {
 	padding: 8% 0% 8% 0%;
 }
 
-#byuiLink {
-	color: linen;
+#byuiLink, footer a:link {
+	color: orangered;
 	text-decoration: none;
 }
 
