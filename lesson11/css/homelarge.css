@@ -1,0 +1,44 @@
+/******************************
+   Desktop+ Viewports CSS
+******************************/
+@media only screen and (min-width: 1200px) {
+   
+/******************
+      Main CSS
+******************/
+main {
+   margin: 0 auto;
+   max-width: 70%;
+}
+
+div.cards {
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-column-gap: 5%;
+   padding: 2.5% 5% 0% 5%;
+}
+
+div.cards section {
+   box-shadow: 5px 5px 5px #224400;
+   border: 1px solid black;
+   height: 98%;
+   display: block;
+}
+
+div.cards section:nth-child(1) h3, section:nth-child(2) h3 {
+   margin-bottom: 7.7%;
+}
+
+div.cards section:nth-child(2) {
+   display:block;
+   background-color: #cac4ce;
+   color: black;
+}
+
+/*************************
+      Footer CSS
+*************************/
+footer {
+   margin: 0 auto;
+   padding: 2% 0% 2% 0%;
+}
+}

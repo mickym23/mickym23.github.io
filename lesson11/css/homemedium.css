@@ -1,0 +1,80 @@
+/************************************
+		Tablet and Kindle Viewports
+************************************/
+@media only screen and (min-width: 600px) {
+
+
+	/*********************
+			Header CSS
+	*********************/
+	header img {
+		width: 100%;
+	}
+
+	.headings h1 {
+		font-size: 3rem;
+	}
+
+	.motto {
+		letter-spacing: 2pt;
+		font-size: larger;
+		margin-left: 17px;
+   }
+	
+/**********************
+	  Navigation Bar CSS
+	**********************/
+	.navigation {
+		display: flex;
+	}
+
+	.navigation li:first-child {
+		display: none;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+	.navigation li a {
+		color: linen;
+	}
+
+	.navigation li a.active {
+		background-color: #b89191;
+		color: white;
+   }
+   
+   /*****************
+        Main CSS
+   *****************/
+   .bannerImage {
+      margin-bottom: -0.7%;
+	}
+
+	div.cards section {
+		margin: 0 auto;
+	}
+
+  div.cards section div {
+		grid-area: content;
+  }
+
+  div.card section img {
+		grid-area: image;
+  }
+
+  div.cards section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "content image";
+		padding-bottom: 1%;
+	}
+
+  div.cards section:nth-child(2) {
+		display: grid;
+		grid-template-columns: 1fr 1fr ;
+		grid-template-areas: "image content";
+	}
+}

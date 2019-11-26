@@ -1,0 +1,159 @@
+/*******************************
+			Banner CSS				
+*******************************/
+.saturdaybanner {
+	width: auto;
+	background-color: linen;
+	color: #242038;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: "Playfair Display SC", 'Times New Roman', Times, serif;
+	padding: 1.5%;
+	display: none;
+}
+
+.contact {
+	background-color: linen;
+	color: #242038;
+}
+.logo {
+	width: 10%;
+}
+
+/*******************************
+			  Header CSS
+*******************************/
+header {
+	background-color: #725ac1;
+	padding: 5px 0;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+
+header img {
+	width: 80px;
+	height: auto;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
+   font-family: "Playfair Display SC", 'Times New Roman', Times, serif;
+   color: linen;
+	font-size: 1.6rem;
+	margin: 0 0 0 17px;
+}
+
+.motto {
+	font-style: italic;
+	color: linen;
+	margin-left: 20px;
+	font-size: 0.9rem;
+	letter-spacing: 0.3pt;
+}
+
+/****************************
+		Navigation Bar CSS
+****************************/
+nav {
+	margin: 0 auto;
+	max-width: 100%;
+	background-color: #240238;
+	color: linen;
+}
+
+.navigation {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	margin: 0%;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	color: linen;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+
+.navigation a:hover {
+	color: #240238;
+	background-color: linen;
+	font-weight: 700;
+}
+
+.responsive li {
+	display: block;
+}
+
+/****************************
+         Main CSS
+****************************/
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+   background-color: #cac4ce;
+	justify-items: center; 
+	padding: 2% 0% 2% 0%;
+}
+
+main figure {
+   border: 4px solid beige;
+   padding: 0.5% 0% 0.5% 0%;
+}
+
+main figure img {
+	margin-top: -1%;
+   width: 100%;
+}
+
+figure figcaption {
+   text-align: center;
+   font-family: "Playfair Display SC", 'Times New Roman', Times, serif;
+   font-weight: bold;
+	background-color: linen;
+	margin: -2% 0% -1% 0%;
+	padding: 3%;
+}
+
+figure img[data-src] {
+   filter: blur(0.3em);
+}
+
+figure img {
+   filter: blur(0em);
+   transition: filter 0.7s;
+}
+
+/****************************
+			Footer CSS
+****************************/
+footer {
+	width:100%;
+   text-align: center;
+	background-color: #240238;
+	color: linen;
+	font-family: "Playfair Display SC", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	margin: 0 auto;
+	padding: 8% 0% 8% 0%;
+}
+
+#byuiLink {
+	color: linen;
+	text-decoration: none;
+}
