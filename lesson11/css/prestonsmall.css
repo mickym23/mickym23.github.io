@@ -74,11 +74,9 @@ header img {
 nav {
 	margin: 0 auto;
 	max-width: 100%;
-	background-color: #000;
-	color: white;
-	font-size: 1.4em;
-	letter-spacing: 1pt;
-	
+	background-color: #240238;
+	color: linen;
+	font-size: 1em;
 }
 
 .navigation {
