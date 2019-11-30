@@ -75,7 +75,7 @@ nav {
 	margin: 0 auto;
 	max-width: 100%;
 	background-color: #240238;
-	color: linen;
+	color: white;
 }
 
 .navigation {
@@ -124,8 +124,8 @@ main,
 footer {
 	text-align: center;
 	max-width: 100%;
-	background-color: #8d86c9;
-	color: linen;
+	background-color: #605a97;
+	color: white;
 	margin: 0 auto;
 }
 
