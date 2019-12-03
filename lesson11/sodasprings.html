@@ -6,14 +6,14 @@
          <!-- Meta Information -->
          <meta charset = "UTF-8">
          <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-         <meta name = "description" content = "Fish Haven, Week 11, CIT230 Web Frontend Development, Mikhail Cedras">
-         <title>Fish Haven | Forecast365</title> 
+         <meta name = "description" content = "Soda Springs, Week 11, CIT230 Web Frontend Development, Mikhail Cedras">
+         <title>Soda Springs | Forecast365</title> 
 
          <!-- Importing CSS Files -->
          <link rel = "stylesheet" href = "css/normalize.css"> 
-         <link rel = "stylesheet" href = "css/fishsmall.css">   
-         <link rel = "stylesheet" href = "css/fishmedium.css">
-         <link rel = "stylesheet" href = "css/fishlarge.css">
+         <link rel = "stylesheet" href = "css/sodasmall.css">   
+         <link rel = "stylesheet" href = "css/sodamedium.css">
+         <link rel = "stylesheet" href = "css/sodalarge.css">
 
          <!-- Importing favicon.io file -->
          <link rel = "shortcut icon" href = "images/favicon.ico">
@@ -42,8 +42,8 @@
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href = "preston.html">Preston</a></li>
-            <li><a class = "active" href="fishhaven.html">Fish Haven</a></li>
-            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a class = "active" href="sodasprings.html">Soda Springs</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
          </ul>
@@ -53,15 +53,15 @@
       <main>
 
          <!-- Title of Preston, Idaho -->
-         <h2 class = "townName">Fish Haven, Idaho</h2>
+         <h2 class = "townName">Soda Springs, Idaho</h2>
 
          <!-- Display for Town JSON data card for Upcoming Events -->
-         <div class = "cards2"></div> 
+         <div class = "cards3"></div> 
     
          <!-- Weather Summary and Hero Image -->
          <div class = "container weathersummary">
             <picture>
-            <img  class = "heroimage" src = "images/fishhavenheroimage.jpg" alt = "Fish Haven Weather Summary Image">
+            <img  class = "heroimage" src = "images/sodaspringsheroimage.jpg" alt = "Soda Springs Weather Summary Image">
             </picture>
             <div class = "summaryBlock">
                <h3>Weather Summary</h3>
@@ -78,19 +78,23 @@
               
          <!-- Article Section -->
          <section class = "container">
-               <h2 class = "articletitle">Master Baiter</h2><br>
-               <p class = "articlep" >By Malvern Cedras</p>
+               <h2 class = "articletitle">Geysers! Geysers!</h2><br>
+               <p class = "articlep" >By Bruno Apollo</p>
             <div class = "articlecontent">
-                  <img class = "articleimg1" src = "images/fisharticle.jpg" alt = "Edgar the Fisherman">
-               <p>Fish Haven is known for its amazing fishing spots. Fish is even in the name of the town! We recently 
-                  inquired of one of the towns oldest, but most experienced fishermen. His name is Edgar Visser, he has 
-                  been fishing for over forty years. He suggests if you really want to get a great fishing expereince, it is 
-                  best to come to Fish Haven between June and September. That's when the fish are all hungry after their 
-                  annual migration. All bait works during that time, from the tiniest worms to the new baiter bobbles. 
-                  He says that he primarily fishes in the saratoga and hampster fishing pools, quiet and peaceful, yet fruitful!
-                  The only question needed to be asked is, "When do we go fishing, guys?"!
+                  <img class = "articleimg1" src = "images/sodaarticle.jpg" alt = "Geyser shooting steam">
+               <p>Going to a park is nice, but going to Soda Springs National Geyser Park is great! Here 
+                  you can see geysers shoot up to three meters high into the air. Perfect for all weather
+                  conditions to visit. A personalized tour guide can be requested free of charge! There are 
+                  also seveal boiling mud pools. The Native Indians used these naturally occuring tools to 
+                  cook their foods. Quite a fancy way to cook! Great for the family, we recommend it!
                </p>
-                  <img class = "articleimg2" src = "images/fisharticle.jpg" alt = "Edgar the Fisherman">
+
+               <p>
+                  Around the national park areas, there are several world-famous restaurants. Everything is 
+                  freshly prepared and delivers the best for all tourists! Have a look at Milly's Kitchen for 
+                  their special trout and salmon pastries!
+               </p>
+                  <img class = "articleimg2" src = "images/sodaarticle.jpg" alt = "Geyser shooting steam">
             </div>
          </section>
 </main>
@@ -101,7 +105,7 @@
          <section class = "container contact">
             <h1>Contact Information</h1>
             <div>
-               <img class = "maps" src = "images/fishhavenmap-min.JPG" alt = "Google Maps Image">
+               <img class = "maps" src = "images/sodaspringsmap-min.JPG" alt = "Google Maps Image">
                
                <div class = "right">
                   <h3>Forecast365</h3>
@@ -129,10 +133,10 @@
       <script src = "js/menu.js"></script>
 
       <!-- Weather API + Windchill + 5-day Forecast -->
-      <script src = "js/fish-api.js"></script>
+      <script src = "js/soda-api.js"></script>
 
       <!-- Five Day Forecast JS -->
-      <script src = "js/fishforecast.js"></script>
+      <script src = "js/sodaforecast.js"></script>
 
       <!-- Importing Web Font JS -->
       <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -140,6 +144,6 @@
       <!-- Running Web Loader Function -->
       <script src= "js/webloader.js"></script>
 
-      <script src = "js/fishevents.js"></script>
+      <script src = "js/sodaevents.js"></script>
    </body>
 </html>

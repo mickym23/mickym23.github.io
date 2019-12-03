@@ -4,6 +4,7 @@
 html {
 	margin: 0 auto;
 	background-color: #cac4ce;
+	color: #240238;
 }
 
 * {
@@ -131,7 +132,7 @@ main {
 	padding-top: 1%;
 }
 
-h2 {
+h1 {
 	text-align: center;
 	color: linen;
 	font-size: 1.5em;
@@ -257,18 +258,27 @@ form label.email input::placeholder {
 /****************************
 			Footer CSS
 ****************************/
+
+.maps {
+	display: none;
+}
+
+.contact h1 {
+	padding: 5% 0% 2% 0%;
+	color: #240238;
+}
+
 footer {
-   width:100%;
-   text-align: center;
+	text-align: center;
 	background-color: #240238;
 	color: linen;
 	font-family: "Playfair Display SC", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	margin: 0 auto;
-	padding: 8% 0% 8% 0%;
+	padding: 2% 0% 2% 0%;
 }
 
-#byuiLink {
-	color: linen;
+#byuiLink, footer a:link, footer a:visited {
+	color: orangered;
 	text-decoration: none;
 }
 

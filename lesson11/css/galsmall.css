@@ -152,8 +152,7 @@ footer {
 	margin: 0 auto;
 	padding: 8% 0% 8% 0%;
 }
-
-#byuiLink {
-	color: linen;
+#byuiLink, footer a:link, footer a:visited {
+	color: orangered;
 	text-decoration: none;
 }

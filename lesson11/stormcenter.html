@@ -22,9 +22,6 @@
 
    <body>
 
-      <!-- Banner that displays on Fridays -->
-      <div class = "saturdaybanner">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
-
       <!-- Responsive Header -->
          <header>
 
@@ -145,11 +142,31 @@
             </form>
       </main>
  
+  <!-- Footer for Preston Page -->
+  <footer>
+      <!-- Contact Information -->
+      <section class = "container contact">
+         <h1>Contact Information</h1>
+         <div>
+            <img class = "maps" src = "images/prestonmap-min.JPG" alt = "Google Maps Image">
+            
+            <div class = "right">
+               <h3>Forecast365</h3>
+               <p>22E 3rd N <br>
+               Preston, ID 83263<br>
+               &#9742; 123-456-789<br>
+               &#9993; weather@forecast354.org<br><br>
+            <a class = "socialmedia" href = "#" target = "_blank"><img class = "logo" src = "images/facebooklogo.png" alt = "Facebook Logo"></a>
+            <a class = "socialmedia" href = "#" target = "_blank"><img class = "logo" src = "images/instagramlogo.png" alt = "Instagram Logo"></a>
+            </div>
 
-      <!-- Footer for Storm Center Page -->
-      <footer>
-            <p>&copy; Forecast365 | <a id="byuiLink" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a> | Mikhail Malvern Cedras</p>
-            <p id  = "fullDate"></p>
+         </div>
+      </section>
+         <section class = "attributions">
+         <p>&copy; Forecast365 | <a id="byuiLink" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a> | Mikhail Malvern Cedras</p>
+         <p><a href = "https://openweathermap.org">OpenWeatherMap</a> supplies all live weather information</p>
+         <p id  = "fullDate"></p>
+         </section>
       </footer>
 
       <!-- Weather Site JavaScript Date Format -->
@@ -157,9 +174,6 @@
 
       <!-- Importing JavaScript File for Navigation -->
       <script src = "js/menu.js"></script>
-
-      <!-- Saturday Preston Pancakes -->
-      <script src = "js/saturdayevent.js"></script>
 
       <!-- Importing Web Font JS -->
       <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
