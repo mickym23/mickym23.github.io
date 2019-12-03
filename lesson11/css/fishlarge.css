@@ -1,0 +1,35 @@
+/******************************
+   Desktop+ Viewports CSS
+******************************/
+@media only screen and (min-width: 1320px) {
+
+   /*********************
+         Main CSS
+   *********************/
+   main, 
+	footer {
+		max-width: 75%;
+		margin: 0 auto;
+	}
+
+   div p {
+      padding: 4% 0% 4% 0%;
+   }
+
+   .townName {
+      border: none;
+   }
+   
+   .summaryBlock {
+      top: 2em;
+      left: 4em;
+   }
+
+   .logo {
+      width:7%;
+   }
+   
+   footer {
+      padding: 2% 0% 2% 0%;
+   }
+}

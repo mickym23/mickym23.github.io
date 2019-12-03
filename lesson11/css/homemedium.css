@@ -48,7 +48,12 @@
    
    /*****************
         Main CSS
-   *****************/
+	*****************/
+	main, 
+	footer {
+		width: 80%;
+		margin: 0 auto;
+	}
    .bannerImage {
       margin-bottom: -0.7%;
 	}
@@ -77,4 +82,23 @@
 		grid-template-columns: 1fr 1fr ;
 		grid-template-areas: "image content";
 	}
+
+
+	.maps {
+		display: block;
+		float: left;
+		max-width: 30%;
+		padding-left: 6%;
+	}
+
+	.socialmedia img {
+		width: 7%;
+		padding-bottom: 7%;
+	}
+
+	.container.contact {
+		padding-bottom: 5%;
+	}
+
+
 }

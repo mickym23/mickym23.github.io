@@ -6,7 +6,7 @@
          <!-- Meta Information -->
          <meta charset = "UTF-8">
          <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-         <meta name = "description" content = "Preston Fourth Draft, Week 10, CIT230 Web Frontend Development, Mikhail Cedras">
+         <meta name = "description" content = "Preston, Week 11, CIT230 Web Frontend Development, Mikhail Cedras">
          <title>Preston | Forecast365</title> 
 
          <!-- Importing CSS Files -->
@@ -59,6 +59,9 @@
          <!-- Title of Preston, Idaho -->
          <h2 class = "townName">Preston, Idaho</h2>
 
+         <!-- Display for Town JSON data card for Upcoming Events -->
+         <div class = "cards"></div> 
+    
          <!-- Weather Summary and Hero Image -->
          <div class = "container weathersummary">
             <picture>
@@ -75,31 +78,33 @@
          </div>
          
          <!-- Forecast generated through JSON and JS -->
-         <div class="forecast"></div>              
-
+         <div class="forecast"></div>        
+              
          <!-- Article Section -->
          <section class = "container">
-               <h2 class = "articletitle"><strong>Hiking on Preston's Mountains</strong></h2><br>
-               <p class = "articlep" ><em>By Amy Winston</em></p>
+               <h2 class = "articletitle">Hiking on Preston's Mountains</h2><br>
+               <p class = "articlep" >By Mikhail Cedras</p>
             <div class = "articlecontent">
                   <img class = "articleimg1" src = "images/articleimage.jpg" alt = "Hikers in the Preston Mountains">
-               <p>Abundantly fowl i moveth replenish you&#39;ll darkness bring they&#39;re for saying
-                   beast over face lights, form him, yielding. Saying over. Upon be, fruitful very it
-                    won&#39;t. Shall whose air was our. Stars meat morning air every whose moved 
-                    without own beast. Man evening hath beast darkness. So in so years fowl fifth 
-                    creature spirit Brought signs given brought yielding isn&#39;t had stars. Great.
-                     Own were yielding spirit have dry, fly doesn&#39;t hath. Yielding subdue 
-                     gathering evening, life forth called. Be under moveth seas that place called
-                      meat gathering. Created. I.</p>
+               <p>We drive past Preston's iconic mountains each day, ever wanted to explore there? Forecast365 is here to give you
+                  a rough map about hiking the Preston Mountains. There are three different trails, each with unique fitness level 
+                  requirements. Winding Snake (10mi, Moderate fitness), Daredevil (2mi, Advanced fitness), Queen's Rose (5mi, low fitness)
+                  are the three trails, but we seemed to like Winding Snake the most, challenging, yet fun. Be sure to pack sunscreen, a 
+                  light lunch or snacks, and lots of water. It can get quite hot here, a baseball cap and a neck protector is ideal in summer 
+                  weather. We really recommend these hiking trails. Get your friends, plan a nice hike and day out on the weekend!
+               </p>
                   <img class = "articleimg2" src = "images/articleimage.jpg" alt = "Hikers in the Preston Mountains">
             </div>
          </section>
+</main>
 
+          <!-- Footer for Preston Page -->
+      <footer>
          <!-- Contact Information -->
          <section class = "container contact">
             <h1>Contact Information</h1>
             <div>
-               <img class = "maps" src = "images/googlemapsimage.jpg" alt = "Google Maps Image">
+               <img class = "maps" src = "images/prestonmap-min.JPG" alt = "Google Maps Image">
                
                <div class = "right">
                   <h3>Forecast365</h3>
@@ -113,14 +118,11 @@
 
             </div>
          </section>
-
-      </main>
-
-      <!-- Footer for Preston Page -->
-      <footer>
+            <section class = "attributions">
             <p>&copy; Forecast365 | <a id="byuiLink" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a> | Mikhail Malvern Cedras</p>
             <p><a href = "https://openweathermap.org">OpenWeatherMap</a> supplies all live weather information</p>
             <p id  = "fullDate"></p>
+            </section>
          </footer>
 
       <!-- Weather Site JavaScript Date Format -->
@@ -136,12 +138,14 @@
       <script src = "js/preston-api.js"></script>
 
       <!-- Five Day Forecast JS -->
-      <script src = "js/five-day-forecast.js"></script>
+      <script src = "js/prestonforecast.js"></script>
 
       <!-- Importing Web Font JS -->
       <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 
       <!-- Running Web Loader Function -->
       <script src= "js/webloader.js"></script>
+
+      <script src = "js/townevents.js"></script>
    </body>
 </html>

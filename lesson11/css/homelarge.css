@@ -6,14 +6,15 @@
 /******************
       Main CSS
 ******************/
-main {
+main, 
+footer {
    margin: 0 auto;
-   max-width: 70%;
+   max-width: 75%;
 }
 
 div.cards {
    grid-template-columns: 1fr 1fr 1fr;
-   grid-column-gap: 5%;
+   grid-column-gap: 3%;
    padding: 2.5% 5% 0% 5%;
 }
 
@@ -24,8 +25,8 @@ div.cards section {
    display: block;
 }
 
-div.cards section:nth-child(1) h3, section:nth-child(2) h3 {
-   margin-bottom: 7.7%;
+div.cards section:nth-child(1) h2 {
+   padding-bottom: 9%;
 }
 
 div.cards section:nth-child(2) {
