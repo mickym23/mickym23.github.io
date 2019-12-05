@@ -47,7 +47,7 @@ nav {background-color: #111;
 }
 
 // MAIN nested 
-main{display: block; padding: 1rem 2%;
+main{display: block; padding: 1rem $gutter;
 
     // Primary Color variable
      h1 {color: $primaryColor; font-weight: $heavyWeight;}
