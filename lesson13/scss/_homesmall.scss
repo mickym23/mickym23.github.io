@@ -182,8 +182,47 @@ main {
    width: 65%;
 }
 
-footer {
+.moroni {
+   margin: 0 auto;
+   width: 100%;
+}
+
+.templetitle {
+   margin: 0 auto;
+   width: 75%;
+   color: $whitesmoke;
+   background-color: $lapis;
+   margin-top: -0.3%;
+   padding: 2% 0% 2% 0%;
+   font-family: $parisienne;
+}
+div.cards {
+   font-family: $poiretone;
+   margin: 0 auto;
+   display:grid;
+   grid-template-columns: auto;
+   grid-gap: 7px;
+   text-align: left;
+   background-color: #cfb9a5;
+   
+   h2 {
+      text-align: center;
+   }
+   img {
+      width: 50%;
+   }
+   h2, h3, p {
+      font-weight: bold;
+   }
+   h2, h3, img, p {
+      padding-left: 10%;
+      padding-right: 10%; 
+   }
+}
+
+footer, .contact {
    font-family: $dancing;
+   width: 100%;
 }
 #byuiLink, footer a:link, footer a:visited {
 	color: $whitesmoke;

@@ -47,4 +47,18 @@ nav a {
       font-size: 1.5rem;
    }
 }
+
+.moroni {
+   margin: 0;
+   width: 75%;
+}
+
+div.cards { 
+   grid-template-columns: auto auto;
+   width: 75%;
+
+   img {
+      width: 80%;
+   }
+}
 }

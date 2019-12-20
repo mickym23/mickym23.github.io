@@ -621,8 +621,51 @@ main {
   width: 65%;
 }
 
-footer {
+.moroni {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.templetitle {
+  margin: 0 auto;
+  width: 75%;
+  color: #edf7f6;
+  background-color: #2660a4;
+  margin-top: -0.3%;
+  padding: 2% 0% 2% 0%;
+  font-family: "Parisienne";
+}
+
+div.cards {
+  font-family: "Poiret One";
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 7px;
+  text-align: left;
+  background-color: #cfb9a5;
+}
+
+div.cards h2 {
+  text-align: center;
+}
+
+div.cards img {
+  width: 50%;
+}
+
+div.cards h2, div.cards h3, div.cards p {
+  font-weight: bold;
+}
+
+div.cards h2, div.cards h3, div.cards img, div.cards p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+footer, .contact {
   font-family: "Dancing Script";
+  width: 100%;
 }
 
 #byuiLink, footer a:link, footer a:visited {
@@ -669,6 +712,17 @@ footer {
   }
   .hometemple h4 {
     font-size: 1.5rem;
+  }
+  .moroni {
+    margin: 0;
+    width: 75%;
+  }
+  div.cards {
+    grid-template-columns: auto auto;
+    width: 75%;
+  }
+  div.cards img {
+    width: 80%;
   }
 }
 

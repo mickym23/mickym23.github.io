@@ -1,5 +1,5 @@
 // Adding Google Font Families
-/*WebFont.load({google:{families: ["Poiret+One", "Eagle+Lake", "Pacifico", "Dancing+Script", "Rock+Salt", 
+WebFont.load({google:{families: ["Poiret+One", "Eagle+Lake", "Pacifico", "Dancing+Script", "Rock+Salt", 
 "Parisienne"]}});
 
 // Navigation Toggle Menu Hamburger
@@ -14,7 +14,7 @@ var dateOptions = {
    year: "numeric",
 }
 document.getElementById('fullDate').innerHTML = new Date().toLocaleString("en-ZA", dateOptions);
-*/
+
 
 
 
@@ -35,40 +35,93 @@ fetch(requestURL)
           let name = document.createElement('h2');
           let telephone= document.createElement('p');
           let image = document.createElement('img');
-          let dedication = document.createElement('p');
+          let email = document.createElement('p');
           let address = document.createElement('p');
-          let ordinance = document.createElement('p');
+          let ordinances = document.createElement('div');
           let services = document.createElement('div');
           let facilities = document.createElement('h3');
           let contact = document.createElement('h3');
-          
-          
+          let ord = document.createElement('h3');
+          let ordinanceDays = document.createElement('div');
+          let sessions = document.createElement('div');
+          let closures = document.createElement('div');
+          let history = document.createElement('div');
+          let clo = document.createElement('h3');
+          let histories = document.createElement('h3');
+          let ord2 = document.createElement('h3');
+          let ord3 = document.createElement('h3');
+
           name.textContent = temples[i].name;
           telephone.textContent = "Telephone Number: " + temples[i].telephone;
-          dedication.textContent = "Dedication Date: " + temples[i].dedication;
+          email.textContent = "Email Address: " + temples[i].email;
           address.textContent = "Temple Address: " + temples[i].address;
           image.setAttribute('src', temples[i].imageurl);
           image.setAttribute('alt', "Beautiful Image of " + temples[i].name);
           facilities.textContent = "Facilities";
           contact.textContent = "Contact Information";
+          ord.textContent = "Ordinances";
+          ord2.textContent = "Session Times";
+          ord3.textContent = "Avaliable Days";
+          clo.textContent = "Days Closed";
+          histories.textContent = "Important Historical Dates";
+          
           
           for (let j = 0; j < temples[i].services.length; j++){
             let service = document.createElement('p');
             service.textContent = temples[i].services[j];
             services.appendChild(service); 
          }
+
+         for (let l = 0; l < temples[i].ordinances.length; l++) {
+            let ordinance = document.createElement('p');
+            ordinance.textContent = temples[i].ordinances[l];
+            ordinances.appendChild(ordinance);
+         }
+
+         for (let k = 0; k < temples[i].ordinanceDays.length; k++) {
+            let ordinanceDay = document.createElement('p');
+            ordinanceDay.textContent = temples[i].ordinanceDays[k];
+            ordinanceDays.appendChild(ordinanceDay);
+         }
+
+         for (let f = 0; f < temples[i].sessionHours.length; f++) {
+            let session = document.createElement('p');
+            session.textContent = temples[i].sessionHours[f];
+            sessions.appendChild(session);
+         }
+
+         for (let h = 0; h < temples[i].closures.length; h++) {
+            let closure = document.createElement('p');
+            closure.textContent = temples[i].closures[h];
+            closures.appendChild(closure);
+         }
+         for (let a = 0; a < temples[i].history.length; a++) {
+            let hist = document.createElement('p');
+            hist.textContent = temples[i].history[a];
+            history.appendChild(hist);
+         }
+         
           // Adding information under section tag 
           card.appendChild(name); 
+          card.appendChild(image);
           card.appendChild(contact);
-          card.appendChild(telephone); 
-          card.appendChild(dedication);
-          card.appendChild(ordinance); 
+          card.appendChild(telephone);
+          card.appendChild(email);
+          card.appendChild(address); 
+          card.appendChild(ord);
+          card.appendChild(ordinances);
+          card.appendChild(ord2);
+          card.appendChild(sessions);
+          card.appendChild(ord3);
+          card.appendChild(ordinanceDays);
           card.appendChild(facilities);
           card.appendChild(services);
-          card.appendChild(address);
-          card.appendChild(image);
+          card.appendChild(clo);
+          card.appendChild(closures);
+          card.appendChild(histories);
+          card.appendChild(history);
            
 
-        // Adding to information to card class
-        document.querySelector('div.cards').appendChild(card);
+          // Adding to information to card class
+          document.querySelector('div.cards').appendChild(card);
     }});
