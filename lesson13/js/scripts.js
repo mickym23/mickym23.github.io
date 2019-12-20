@@ -32,41 +32,39 @@ fetch(requestURL)
         
         for (let i = 0; i < temples.length; i++) {
           let card = document.createElement('section');
-          let name = document.createElement('p');
+          let name = document.createElement('h2');
           let telephone= document.createElement('p');
           let image = document.createElement('img');
-          let dedication = document.createElement('h2');
+          let dedication = document.createElement('p');
           let address = document.createElement('p');
           let ordinance = document.createElement('p');
-          let service = document.createElement('p');
-          let iterate = document.createElement('p');
-          
-          
-          name.textContent = temples[0].name;
-          telephone.textContent = temples[0].telephone;
-          dedication.textContent = temples[0].dedication;
-          address.textContent = temples[0].address;
-          image.setAttribute('src', temples[0].imageurl);
-          image.setAttribute('alt', "Beautiful Image of " + temples[0].name);
-
-
           let services = document.createElement('div');
-          for (x=0;x<temples[i].services.length; x++){
+          let facilities = document.createElement('h3');
+          let contact = document.createElement('h3');
+          
+          
+          name.textContent = temples[i].name;
+          telephone.textContent = "Telephone Number: " + temples[i].telephone;
+          dedication.textContent = "Dedication Date: " + temples[i].dedication;
+          address.textContent = "Temple Address: " + temples[i].address;
+          image.setAttribute('src', temples[i].imageurl);
+          image.setAttribute('alt', "Beautiful Image of " + temples[i].name);
+          facilities.textContent = "Facilities";
+          contact.textContent = "Contact Information";
+          
+          for (let j = 0; j < temples[i].services.length; j++){
             let service = document.createElement('p');
-            service.textContent=temples[i].services[x];
+            service.textContent = temples[i].services[j];
             services.appendChild(service); 
-        }
-          for (let x = 0; x<temples[i].services.length; x++){
-            service.textContent=temples[i].services[1];
-            card.appendChild(service);
-            console.log(service); 
-        }
+         }
           // Adding information under section tag 
           card.appendChild(name); 
+          card.appendChild(contact);
           card.appendChild(telephone); 
           card.appendChild(dedication);
           card.appendChild(ordinance); 
-          card.appendChild(service);
+          card.appendChild(facilities);
+          card.appendChild(services);
           card.appendChild(address);
           card.appendChild(image);
            
