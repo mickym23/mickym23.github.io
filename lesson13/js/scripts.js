@@ -20,7 +20,7 @@ document.getElementById('fullDate').innerHTML = new Date().toLocaleString("en-ZA
 
 
 // BYU-I JSON
-const requestURL = "https://bladedkiwi.github.io/lesson_13/temples.json";
+const requestURL = "https://mickym23.github.io/lesson13/json/temples.json";
 
 fetch(requestURL)
     .then(function (response){
