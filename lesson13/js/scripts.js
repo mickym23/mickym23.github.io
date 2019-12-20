@@ -39,7 +39,9 @@ fetch(requestURL)
           let address = document.createElement('p');
           let ordinance = document.createElement('p');
           let service = document.createElement('p');
-                 
+          let iterate = document.createElement('p');
+          
+          
           name.textContent = temples[0].name;
           telephone.textContent = temples[0].telephone;
           dedication.textContent = temples[0].dedication;
@@ -47,14 +49,15 @@ fetch(requestURL)
           image.setAttribute('src', temples[0].imageurl);
           image.setAttribute('alt', "Beautiful Image of " + temples[0].name);
 
-         for (let j = 0; j < temples[i].ordinances.length; j++) {
-            ordinance.textContent = temples[i].ordinances[j];
-            card.appendChild(ordinance);
-            console.log(ordinance)
-          }
 
-          for (let x = 0; x<temples[i].services.length; x++){
+          let services = document.createElement('div');
+          for (x=0;x<temples[i].services.length; x++){
+            let service = document.createElement('p');
             service.textContent=temples[i].services[x];
+            services.appendChild(service); 
+        }
+          for (let x = 0; x<temples[i].services.length; x++){
+            service.textContent=temples[i].services[1];
             card.appendChild(service);
             console.log(service); 
         }
