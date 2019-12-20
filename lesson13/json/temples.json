@@ -1,0 +1,56 @@
+{
+   "temples": [{
+       "name": "Johannesburg, South Africa Temple",
+       "address": "7 Jubilee Road, Parktown, Johannesburg, 2193, South Africa",
+       "death": "27 June 1844",
+       "telephone": "(+27) 11 645 1540",
+       "services": ["Clothing rental available", "No cafeteria available","Patron housing available", "Distribution center nearby"],
+       "ordinances": ["Baptism", "Initiatory", "Endowment", "Sealing"],
+       "closures": ["Tuesday, 24 December 2019", "Wednesday, 25 December 2019", "Thursday, 26 December 2019", "Tuesday, 31 December 2019"],
+       "imageurl": "joburgtemple.jpg"
+     },
+     {
+       "name": "Brigham",
+       "lastname": "Young",
+       "birthdate": "01 June 1801",
+       "death": "29 August 1877",
+       "length": 30,
+       "order": 2,
+       "birthplace": "Vermont",
+       "numofchildren": 56,
+     },
+     {
+       "name": "John",
+       "lastname": "Taylor",
+       "birthdate": "01 November 1808",
+       "death": "25 July 1887",
+       "length": 6,
+       "order": 3,
+       "birthplace": "England",
+       "numofchildren": 34,
+       "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/john-taylor-82909-gallery.jpg"
+     },
+     {
+       "name": "Wilford",
+       "lastname": "Woodruff",
+       "birthdate": "01 March 1807",
+       "death": "02 September 1898",
+       "length": 9,
+       "order": 4,
+       "birthplace": "Connecticut",
+       "numofchildren": 34,
+       "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/wilford-woodruff-82910-gallery.jpg"
+     },
+     {
+       "name": "Lorenzo",
+       "lastname": "Snow",
+       "birthdate": "03 April 1814",
+       "death": "19 October 1901",
+       "length": 3,
+       "order": 5,
+       "birthplace": "Ohio",
+       "numofchildren": 42,
+       "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lorenzo-snow-82911-gallery.jpg"
+     }
+   ]
+   }
