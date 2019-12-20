@@ -20,7 +20,7 @@ document.getElementById('fullDate').innerHTML = new Date().toLocaleString("en-ZA
 
 
 // BYU-I JSON
-const requestURL = "https://mickym23.github.io/lesson13/json/temples.json";
+const requestURL = "https://bladedkiwi.github.io/lesson_13/temples.json";
 
 fetch(requestURL)
     .then(function (response){
@@ -47,9 +47,11 @@ fetch(requestURL)
           image.setAttribute('src', temples[0].imageurl);
           image.setAttribute('alt', "Beautiful Image of " + temples[0].name);
 
-     /*   for (let j = 0; j < temples[i].ordinances.length; j++) {
+         for (let j = 0; j < temples[i].ordinances.length; j++) {
             ordinance.textContent = temples[i].ordinances[j];
-          }*/
+            card.appendChild(ordinance);
+            console.log(ordinance)
+          }
 
           for (let x = 0; x<temples[i].services.length; x++){
             service.textContent=temples[i].services[x];
