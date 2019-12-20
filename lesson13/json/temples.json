@@ -2,12 +2,12 @@
    "temples": [{
        "name": "Johannesburg, South Africa Temple",
        "address": "7 Jubilee Road, Parktown, Johannesburg, 2193, South Africa",
-       "death": "27 June 1844",
+       "dedication": "27 June 1844",
        "telephone": "(+27) 11 645 1540",
        "services": ["Clothing rental available", "No cafeteria available","Patron housing available", "Distribution center nearby"],
        "ordinances": ["Baptism", "Initiatory", "Endowment", "Sealing"],
        "closures": ["Tuesday, 24 December 2019", "Wednesday, 25 December 2019", "Thursday, 26 December 2019", "Tuesday, 31 December 2019"],
-       "imageurl": "joburgtemple.jpg"
+       "imageurl": "https://mickym23.github.io/lesson13/images/joburgtemple.jpg"
      },
      {
        "name": "Brigham",
