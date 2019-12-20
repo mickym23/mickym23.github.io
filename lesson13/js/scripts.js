@@ -30,12 +30,15 @@ fetch(requestURL)
 
         const temples = jsonObject['temples'];
         
+        for (let i = 0; i < temples.length; i++) {
           let card = document.createElement('section');
           let name = document.createElement('p');
           let telephone= document.createElement('p');
           let image = document.createElement('img');
           let dedication = document.createElement('h2');
-          let address = document.createElement('p3');
+          let address = document.createElement('p');
+          let ordinance = document.createElement('p');
+          let service = document.createElement('p');
                  
           name.textContent = temples[0].name;
           telephone.textContent = temples[0].telephone;
@@ -44,14 +47,25 @@ fetch(requestURL)
           image.setAttribute('src', temples[0].imageurl);
           image.setAttribute('alt', "Beautiful Image of " + temples[0].name);
 
-         
+     /*   for (let j = 0; j < temples[i].ordinances.length; j++) {
+            ordinance.textContent = temples[i].ordinances[j];
+          }*/
+
+          for (let x = 0; x<temples[i].services.length; x++){
+            service.textContent=temples[i].services[x];
+            card.appendChild(service);
+            console.log(service); 
+        }
           // Adding information under section tag 
           card.appendChild(name); 
           card.appendChild(telephone); 
-          card.appendChild(dedication); 
+          card.appendChild(dedication);
+          card.appendChild(ordinance); 
+          card.appendChild(service);
           card.appendChild(address);
-          card.appendChild(image); 
+          card.appendChild(image);
+           
 
         // Adding to information to card class
         document.querySelector('div.cards').appendChild(card);
-      });
+    }});
