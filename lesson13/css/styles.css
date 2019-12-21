@@ -677,8 +677,8 @@ div.cards section:nth-child(3), div.cards section:nth-child(4) {
 
 .contactmain {
   margin: 0;
-  background-color: #bdc1c0;
-  color: #56351e;
+  background-color: #858585;
+  color: #edf7f6;
 }
 
 .contactmain h1 {
@@ -691,15 +691,28 @@ div.cards section:nth-child(3), div.cards section:nth-child(4) {
   font-style: italic;
 }
 
+.googlemaps {
+  width: 350px;
+  height: 250px;
+}
+
 .cinfo {
-  display: inline-flex;
-  row-gap: 3px;
+  display: block;
 }
 
 .cinfo p {
   padding-left: 5%;
-  color: #56351e;
+  color: #edf7f6;
+  text-align: center;
+}
+
+.contactmain form {
   text-align: left;
+}
+
+.contactmain form label {
+  display: block;
+  width: 150px;
 }
 
 footer, .contact {
@@ -768,6 +781,20 @@ footer, .contact {
   div.cards img {
     width: 80%;
   }
+  .googlemaps {
+    padding-left: 5%;
+    width: 450px;
+    height: 350px;
+  }
+  .cinfo {
+    display: inline-flex;
+    row-gap: 3px;
+  }
+  .cinfo p {
+    padding-left: 5%;
+    color: #edf7f6;
+    text-align: left;
+  }
   .contactmain {
     margin: 0 auto;
     max-width: 75%;
@@ -791,6 +818,10 @@ footer, .contact {
   }
   .bannerimage {
     width: 65%;
+  }
+  .googlemaps {
+    width: 200px;
+    height: 200px;
   }
   .reservationBox {
     width: 65%;

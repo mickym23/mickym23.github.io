@@ -235,8 +235,8 @@ div.cards {
 
 .contactmain {
    margin: 0;
-   background-color: #bdc1c0;
-   color: $cafe;
+   background-color: #858585;
+   color: $whitesmoke;
    h1 {
       font-family: $poiretone;
       margin: 0 auto;
@@ -248,15 +248,30 @@ div.cards {
    font-style: italic;
 }
 
+.googlemaps {
+   width: 350px;
+   height: 250px;
+}
+
 .cinfo {
-   display: inline-flex;
-   row-gap: 3px;
+   display: block;
    p {
       padding-left: 5%;
-      color: $cafe;
-      text-align: left;
+      color: $whitesmoke;
+      text-align: center;
    }
 }
+
+.contactmain {
+   form {
+      text-align: left;
+      label {
+         display: block;
+         width: 150px;
+      }
+   }
+}
+
 footer, .contact {
    font-family: $poiretone;
    width: 95%;

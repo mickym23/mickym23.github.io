@@ -65,6 +65,22 @@ div.cards {
       width: 80%;
    }
 }
+.googlemaps {
+   padding-left: 5%;
+   width: 450px;
+   height: 350px;
+}
+
+.cinfo {
+   display: inline-flex;
+   row-gap: 3px;
+   p {
+      padding-left: 5%;
+      color: $whitesmoke;
+      text-align: left;
+   }
+}
+
 
 .contactmain {
    margin: 0 auto;
