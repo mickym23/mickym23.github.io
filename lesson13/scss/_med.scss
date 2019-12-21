@@ -110,4 +110,12 @@ div.cards {
    }
 
 }
+
+.weddingvens {
+   display: grid;
+   grid-template-columns: auto auto auto auto auto;
+   picture img {
+      width: 70%;
+   }
+}
 }

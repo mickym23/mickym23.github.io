@@ -296,6 +296,45 @@ div.cards {
    }
 }
 
+.receptionmain {
+   font-family: $poiretone;
+   margin: 0 auto;
+
+   .receptiondetails {
+      margin: 0 auto;
+      width: 75%;
+   }
+
+   h2 {
+      padding: 1% 0% 1% 0%;
+   }
+   ul li, p, picture figcaption {
+      font-weight: bold;
+   }
+
+   ul, ul li {
+      padding: 1%;
+   }
+
+   p {
+      font-style: italic;
+   }
+}
+
+.venues {
+   text-align: left;
+   border: 1px solid black;
+   padding: 3%;
+}
+
+.weddingvens {
+   display: grid;
+   grid-template-columns: auto;
+   padding-bottom: 2%;
+   picture img {
+      width: 100%;
+   }
+}
 footer, .contact {
    font-family: $poiretone;
    width: 95%;

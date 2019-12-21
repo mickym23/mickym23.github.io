@@ -741,6 +741,48 @@ div.cards section:nth-child(3), div.cards section:nth-child(4) {
   width: 100%;
 }
 
+.receptionmain {
+  font-family: "Poiret One";
+  margin: 0 auto;
+}
+
+.receptionmain .receptiondetails {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.receptionmain h2 {
+  padding: 1% 0% 1% 0%;
+}
+
+.receptionmain ul li, .receptionmain p, .receptionmain picture figcaption {
+  font-weight: bold;
+}
+
+.receptionmain ul, .receptionmain ul li {
+  padding: 1%;
+}
+
+.receptionmain p {
+  font-style: italic;
+}
+
+.venues {
+  text-align: left;
+  border: 1px solid black;
+  padding: 3%;
+}
+
+.weddingvens {
+  display: grid;
+  grid-template-columns: auto;
+  padding-bottom: 2%;
+}
+
+.weddingvens picture img {
+  width: 100%;
+}
+
 footer, .contact {
   font-family: "Poiret One";
   width: 95%;
@@ -842,6 +884,13 @@ footer, .contact {
   }
   .weddingportal img, .missionaryportal img {
     width: 50%;
+  }
+  .weddingvens {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+  }
+  .weddingvens picture img {
+    width: 70%;
   }
 }
 
