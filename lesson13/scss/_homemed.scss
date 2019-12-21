@@ -56,6 +56,7 @@ nav a {
 .templetitle {
    width: 75%;
 }
+
 div.cards { 
    grid-template-columns: auto auto;
    width: 75%;
@@ -63,5 +64,10 @@ div.cards {
    img {
       width: 80%;
    }
+}
+
+.contactmain {
+   margin: 0 auto;
+   max-width: 75%;
 }
 }

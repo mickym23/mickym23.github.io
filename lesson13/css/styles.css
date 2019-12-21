@@ -675,6 +675,33 @@ div.cards section:nth-child(3), div.cards section:nth-child(4) {
   padding-bottom: 3%;
 }
 
+.contactmain {
+  margin: 0;
+  background-color: #bdc1c0;
+  color: #56351e;
+}
+
+.contactmain h1 {
+  font-family: "Poiret One";
+  margin: 0 auto;
+  padding: 1.5% 0% 1.5% 0%;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.cinfo {
+  display: inline-flex;
+  row-gap: 3px;
+}
+
+.cinfo p {
+  padding-left: 5%;
+  color: #56351e;
+  text-align: left;
+}
+
 footer, .contact {
   font-family: "Poiret One";
   width: 95%;
@@ -740,6 +767,10 @@ footer, .contact {
   }
   div.cards img {
     width: 80%;
+  }
+  .contactmain {
+    margin: 0 auto;
+    max-width: 75%;
   }
 }
 

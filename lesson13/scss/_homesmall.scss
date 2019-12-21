@@ -233,6 +233,30 @@ div.cards {
    }   
 }
 
+.contactmain {
+   margin: 0;
+   background-color: #bdc1c0;
+   color: $cafe;
+   h1 {
+      font-family: $poiretone;
+      margin: 0 auto;
+      padding: 1.5% 0% 1.5% 0%;
+   }
+}
+
+.italic {
+   font-style: italic;
+}
+
+.cinfo {
+   display: inline-flex;
+   row-gap: 3px;
+   p {
+      padding-left: 5%;
+      color: $cafe;
+      text-align: left;
+   }
+}
 footer, .contact {
    font-family: $poiretone;
    width: 95%;
