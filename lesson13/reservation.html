@@ -1,5 +1,147 @@
-<html>
-   <body>
-      <p>Reservation</p>
-   </body>
-</html>
+<!DOCTYPE HTML>
+<!-- Define Language Set-->
+<html lang="en-us">
+
+   <head>
+
+      <!-- Meta Information -->
+      <meta charset = "UTF-8">
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <meta name = "description" content = "Reservation Page, The Temple Inn & Suites, Term Project CIT230, Mikhail Cedras">
+      <title>Reservation | The Temple Inn & Suites</title> 
+
+   <!-- Importing CSS Files -->
+   <link rel = "stylesheet" href = "css/styles.css">   
+
+   <!-- Importing favicon.io file -->
+   <link rel = "shortcut icon" href = "images/favicon.ico">
+
+</head>
+
+<body>
+<header>
+
+   <picture>
+      <img class = "logo" src = "images/logo.png" alt = "The Temple Inn Logo">
+   </picture>
+
+   <h1 class = "headerTitle">The Temple Inn & Suites</h1>
+
+</header>
+
+
+ <!-- Navigation Bar -->   
+ <nav>
+      <ul class="navigation">
+         <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+         <li><a href="index.html">Home</a></li>
+         <li><a href = "temple.html">Temples</a></li>
+         <li><a href="services.html">Services</a>
+         <li><a class = "active" href = "reservation.html">Reservations</a></li>
+         <li><a href = "contact.html">Contact Us</a></li>
+      </ul>
+   </nav>
+
+   <main class = "resmain">
+
+         <h2 id="reservationpageheader">Room Reservation Request</h2>
+         <div class = "flexcontainer">
+         <form method ="get" action="js/thankyou.js">
+             <fieldset>
+                 <legend>Personal Info</legend>
+                 <ul class="reservationForm">
+                 <li class="row">
+                 <label>*Name:</label>
+                 <input type="text" id="name">
+                 </li>
+                 <li class="row">
+                 <label>*Email:</label>
+                 <input type="text" id="email">
+                 </li>
+                 <li class="row">
+                 <label>*Phone:</label>
+                 <input type="tel" id="phone">
+                 </li>
+                 <li class = "row">
+                  <label>*Home State/Country</label>
+                  <input type="text" id="homeLocation">
+                     </li>
+                     </ul>
+                     </fieldset>
+
+
+                     <fieldset>
+                     <legend>Room Information</legend>
+                     <ul class="reservationForm">
+                     <li class="row">
+                     <label for="location"> Destination Location:</label>
+                     <input type="text" id="Destinationlocation">
+                     </li>
+                     <li class="Daterow">
+                     <label for="dateArrival">Arrival:</label>
+                     <input type="date" id="dateArrival">
+                     </li>
+                     <li class="Daterow">
+                     <label for="dateDeparture">Departure:</label>
+                     <input type="date" id="dateDeparture">
+                     </li>
+                     <li class="row">
+                             <label for="roomNumber">Select Number of Rooms:</label>
+                             <select id="roomNumber" name="rooms"> 
+                             <option value disabled selected>Select Number of Rooms</option> 
+                             <option value="1">1</option>
+                             <option value="2">2</option>
+                             <option value="3">3</option>
+                             <option value="4">4</option>
+                             <option value="5+">5+</option>
+                     </select>
+                     </li>
+                     <li class="row">
+                             <label for="roomType">Select Room Type:</label>
+                             <select id="roomType" name="typeofroom"> 
+                             <option value disabled selected>Select Room Type</option> 
+                             <option value="DoubleBed">Double Bed</option>
+                             <option value="2DoubleBed">2 Double Beds</option>
+                             <option value="QueenBed">Queen Bed</option>
+                             <option value="2QueenBed">2 Queen Beds</option>
+                             <option value="KingBed">King Bed</option>
+                             <option value="2KingBed">2 King Beds</option>
+                             <option value="deluxe">Deluxe Suite</option>
+                             </select>
+                             </li>
+                     </ul>
+                     <button class="submitbuttonReservation" type = "button" onclick="thankYou()" >Submit</button>
+                     </fieldset>
+                    
+                 </form>
+                 </div>
+
+<section class = "contact">
+      <h4>Contact Us</h4>
+      <p>
+      &#9742;: +380 081 771 7116 <br>
+      &#9993;: templesinn@business.com <br>
+    </p>
+   </section>
+ </main>
+ 
+ <footer>
+       <p>&copy; The Temple Inn and Suites | <a id="byuiLink" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a> | Mikhail Malvern Cedras</p>
+       <p>Material that helped make this site can be found here: <a href = "resources.html">Resources</a></p>
+       <p id = fullDate></p>
+ </footer>
+ 
+ <!-- Web Font External JavaScript -->
+ <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>      
+ 
+ <!-- All JS Done in Scripts.js file -->
+ <script src = "js/date.js"></script>
+ 
+ <script src = "js/nav.js"></script>
+ 
+ <script src = "js/webfont.js"></script>
+
+ <script src ="js/thankyou.js"></script>
+ 
+ </body>
+ </html>

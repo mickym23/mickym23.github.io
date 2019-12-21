@@ -364,6 +364,60 @@ div.cards {
    text-align: left;
 }
 
+.resmain {
+   margin: 0 auto;
+}
+
+.flexcontainer {
+   margin: 0 auto;
+   width: 65%;
+}
+
+.reservationForm{
+   list-style-type: none;
+}
+
+.row{
+   display: flex;
+   justify-content: flex-start;
+   padding: 1% 1.5% 1% 1.5%;
+}
+
+.row label {
+   padding: 10px;
+ }
+
+ .row input {
+   flex: 1;
+ }
+
+.Daterow{
+   flex: .5;
+   padding: 10px;
+}
+
+input{
+   border: solid black 1px;
+
+}
+
+.submitbuttonReservation{
+   padding: 5px;
+   font-size: 14pt;
+   display: block;
+   margin: auto;
+   background-color: #40798c;
+   color: whitesmoke;
+   margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
 footer, .contact {
    font-family: $poiretone;
    width: 95%;
