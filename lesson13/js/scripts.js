@@ -21,7 +21,6 @@ document.getElementById('fullDate').innerHTML = new Date().toLocaleString("en-ZA
 
 // JSON Files
 const requestURL = "https://mickym23.github.io/lesson13/json/temples.json";
-const templeWeatherURL = "https://api.openweathermap.org/data/2.5/weather?zip=" + temples[i].zipcode + "&units=imperial&APPID=200cf102e64ee34534ad4bd4429e42bc";
 
 
 fetch(requestURL)
@@ -128,7 +127,15 @@ fetch(requestURL)
           document.querySelector('div.cards').appendChild(card);
 
          let hr = document.createElement('hr');
-         
+
+         const templeWeatherURL = "https://api.openweathermap.org/data/2.5/weather?id=" + temples[i].id + "&units=imperial&APPID=200cf102e64ee34534ad4bd4429e42bc";
+
+         fetch(templeWeatherURL)
+    .then(function (response){
+        return response.json();
+    })
+    .then(function(jsonObject){
+
          // Set variable to JSON data values
       let high = jsObject.main.temp_max;
       let humidity = jsObject.main.humidity;
@@ -153,7 +160,4 @@ fetch(requestURL)
       card.appendChild(hr);
       card.appendChild(wsum);
 
-
-
-
-      }});
+      })}});
