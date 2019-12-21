@@ -364,20 +364,26 @@ div.cards {
    text-align: left;
 }
 
+.resheader {
+   font-family: $parisienne;
+   padding: 1.5% 0% 1.5% 0%;
+}
 .resmain {
    margin: 0 auto;
 }
 
 .flexcontainer {
+   font-family: $poiretone;
+   font-weight: bolder;
    margin: 0 auto;
-   width: 65%;
+   width: 80%;
 }
 
-.reservationForm{
+.resform{
    list-style-type: none;
 }
 
-.row{
+.row {
    display: flex;
    justify-content: flex-start;
    padding: 1% 1.5% 1% 1.5%;
@@ -391,17 +397,16 @@ div.cards {
    flex: 1;
  }
 
-.Daterow{
-   flex: .5;
+.date {
+   text-align: left;
    padding: 10px;
 }
 
-input{
+input {
    border: solid black 1px;
-
 }
 
-.submitbuttonReservation{
+.resbutton {
    padding: 5px;
    font-size: 14pt;
    display: block;

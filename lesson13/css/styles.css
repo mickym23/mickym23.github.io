@@ -812,16 +812,23 @@ div.cards section:nth-child(3), div.cards section:nth-child(4) {
   text-align: left;
 }
 
+.resheader {
+  font-family: "Parisienne";
+  padding: 1.5% 0% 1.5% 0%;
+}
+
 .resmain {
   margin: 0 auto;
 }
 
 .flexcontainer {
+  font-family: "Poiret One";
+  font-weight: bolder;
   margin: 0 auto;
-  width: 65%;
+  width: 80%;
 }
 
-.reservationForm {
+.resform {
   list-style-type: none;
 }
 
@@ -839,8 +846,8 @@ div.cards section:nth-child(3), div.cards section:nth-child(4) {
   flex: 1;
 }
 
-.Daterow {
-  flex: .5;
+.date {
+  text-align: left;
   padding: 10px;
 }
 
@@ -848,7 +855,7 @@ input {
   border: solid black 1px;
 }
 
-.submitbuttonReservation {
+.resbutton {
   padding: 5px;
   font-size: 14pt;
   display: block;
@@ -973,6 +980,10 @@ footer, .contact {
   }
   .suites img {
     width: 100%;
+  }
+  .flexcontainer {
+    margin: 0 auto;
+    width: 65%;
   }
 }
 

@@ -5,6 +5,6 @@ function messageUser() {
 
 
 function thankYou() {
-   var thanks = "Thank you for your booking request. This will be processed shortly. An confirmation email will be sent to your address.";
+   var thanks = "Thank you for your booking request. This will be processed shortly. A confirmation email will be sent to your address.";
    alert(thanks);
 }
