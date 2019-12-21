@@ -89,5 +89,15 @@ div.cards {
 
 .servicegrid {
    max-width: 80%;
+   display: grid;
+   grid-template-columns: auto auto;
+}
+
+.amenities {
+   display:grid;
+}
+
+.specialservices {
+   display:grid;
 }
 }

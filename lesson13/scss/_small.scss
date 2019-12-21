@@ -41,8 +41,7 @@ nav ul {
    padding: 0;
 }
 
-nav li a,
-.dropbtn {
+nav li a {
    display: block;
    text-align: center;
    padding: 3.5%;
@@ -59,8 +58,7 @@ nav li a,
    display: block;
 }
 
-.navigation li,
-.dropdown {
+.navigation li {
    display: none;
 }
 
@@ -68,34 +66,9 @@ nav li a,
    display: block;
 }
 
-nav a:hover,
-.dropdown:hover,
-.dropbtn:hover {
+nav a:hover {
    background-color: $cafe;
    color: $whitesmoke;
-}
-
-.dropdown-content {
-   display: none;
-   position: absolute;
-   background-color: $bff;
-   width: 260px;
-   z-index: 1;
-}
-
-.dropdown-content a {
-   text-decoration: none;
-   display: block;
-   text-align: center;
-}
-
-.dropdown-content a:hover {
-   background-color: $cafe;
-   color: $whitesmoke;
-}
-
-.dropdown:hover .dropdown-content {
-   display: block;
 }
 
 main {
@@ -272,6 +245,10 @@ div.cards {
    }
 }
 
+.servicetitle {
+   font-family: $poiretone;
+}
+
 .amenities {
    text-align: left;
    display:grid;
@@ -282,11 +259,20 @@ div.cards {
    display:grid;
 }
 
+.specialservices, .amenities {
+   font-weight: bold;
+   letter-spacing: 0.3rem;
+   padding: 2%;
+}
+
 .servicegrid {
+   font-family: $poiretone;
    display: grid;
-   grid-template-columns: auto auto;
+   grid-template-columns: auto;
    width: 100%;
    margin: 0 auto;
+   margin-bottom: 2%;
+   border: 2px solid black;
 }
 footer, .contact {
    font-family: $poiretone;

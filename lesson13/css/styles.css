@@ -476,8 +476,7 @@ nav ul {
   padding: 0;
 }
 
-nav li a,
-.dropbtn {
+nav li a {
   display: block;
   text-align: center;
   padding: 3.5%;
@@ -494,8 +493,7 @@ nav li a,
   display: block;
 }
 
-.navigation li,
-.dropdown {
+.navigation li {
   display: none;
 }
 
@@ -503,34 +501,9 @@ nav li a,
   display: block;
 }
 
-nav a:hover,
-.dropdown:hover,
-.dropbtn:hover {
+nav a:hover {
   background-color: #56351e;
   color: #edf7f6;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f19953;
-  width: 260px;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  text-decoration: none;
-  display: block;
-  text-align: center;
-}
-
-.dropdown-content a:hover {
-  background-color: #56351e;
-  color: #edf7f6;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 main {
@@ -715,6 +688,10 @@ div.cards section:nth-child(3), div.cards section:nth-child(4) {
   width: 150px;
 }
 
+.servicetitle {
+  font-family: "Poiret One";
+}
+
 .amenities {
   text-align: left;
   display: grid;
@@ -725,11 +702,20 @@ div.cards section:nth-child(3), div.cards section:nth-child(4) {
   display: grid;
 }
 
+.specialservices, .amenities {
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  padding: 2%;
+}
+
 .servicegrid {
+  font-family: "Poiret One";
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 2%;
+  border: 2px solid black;
 }
 
 footer, .contact {
@@ -818,6 +804,14 @@ footer, .contact {
   }
   .servicegrid {
     max-width: 80%;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .amenities {
+    display: grid;
+  }
+  .specialservices {
+    display: grid;
   }
 }
 
