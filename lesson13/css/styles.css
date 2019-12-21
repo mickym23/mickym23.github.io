@@ -636,7 +636,9 @@ div.cards h2, div.cards h3, div.cards p {
 }
 
 div.cards h2, div.cards h3 {
-  color: #edf7f6;
+  font-family: "Eagle Lake";
+  color: black;
+  font-weight: bolder;
 }
 
 div.cards h2, div.cards h3, div.cards img, div.cards p {
