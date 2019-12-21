@@ -51,6 +51,7 @@ fetch(requestURL)
           let histories = document.createElement('h3');
           let ord2 = document.createElement('h3');
           let ord3 = document.createElement('h3');
+          let linebreak = document.createElement('br');
 
           name.textContent = temples[i].name;
           telephone.textContent = "Telephone Number: " + temples[i].telephone;
@@ -131,33 +132,34 @@ fetch(requestURL)
          const templeWeatherURL = "https://api.openweathermap.org/data/2.5/weather?id=" + temples[i].id + "&units=imperial&APPID=200cf102e64ee34534ad4bd4429e42bc";
 
          fetch(templeWeatherURL)
-    .then(function (response){
-        return response.json();
-    })
-    .then(function(jsonObject){
+         .then((response) => response.json())
+         .then((jsObject) => {
 
          // Set variable to JSON data values
-      let high = jsObject.main.temp_max;
+      let high = Math.floor(jsObject.main.temp_max);
       let humidity = jsObject.main.humidity;
-      let windSpeed = jsObject.wind.speed;
-      let currentTemp = jsObject.main.temp;
+      let windSpeed = Math.floor(jsObject.wind.speed);
+      let currentTemp = Math.floor(jsObject.main.temp);
       let wsum = document.createElement('div');
       let highTemp = document.createElement('p');
       let hum = document.createElement('p');
       let speedOfWind = document.createElement('p');
       let tempOfCurrentTimes = document.createElement('p');
+      let wsumTitle = document.createElement('h3');
 
-      highTemp.textContent = high;
-      hum.textContent = humidity;
-      tempOfCurrentTimes.textContent = currentTemp;
-      speedOfWind.textContent = windSpeed;
+      highTemp.innerHTML = "High: " + high + '&degF';
+      hum.textContent = "Humidity: " + humidity + "%";
+      tempOfCurrentTimes.innerHTML = "Current: " + currentTemp + '&degF';
+      speedOfWind.textContent = "Wind Speed: " + windSpeed + "mph";
+      wsumTitle.textContent = "Weather Summary";
 
       wsum.appendChild(highTemp);
       wsum.appendChild(hum);
       wsum.appendChild(tempOfCurrentTimes);
       wsum.appendChild(speedOfWind);
-
-      card.appendChild(hr);
+      card.appendChild(wsumTitle);
       card.appendChild(wsum);
+      card.appendChild(linebreak);
+      card.appendChild(hr);
 
       })}});

@@ -677,9 +677,9 @@ div.cards section:nth-child(3), div.cards section:nth-child(4) {
 
 footer, .contact {
   font-family: "Poiret One";
-  width: 97.9%;
+  width: 95%;
   padding: 1.5% 0% 1.5% 0%;
-  border: groove whitesmoke 10px;
+  border: groove whitesmoke 8px;
 }
 
 #byuiLink, footer a:link, footer a:visited {
