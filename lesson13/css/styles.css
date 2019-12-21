@@ -715,6 +715,23 @@ div.cards section:nth-child(3), div.cards section:nth-child(4) {
   width: 150px;
 }
 
+.amenities {
+  text-align: left;
+  display: grid;
+}
+
+.specialservices {
+  text-align: left;
+  display: grid;
+}
+
+.servicegrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
 footer, .contact {
   font-family: "Poiret One";
   width: 95%;
@@ -798,6 +815,9 @@ footer, .contact {
   .contactmain {
     margin: 0 auto;
     max-width: 75%;
+  }
+  .servicegrid {
+    max-width: 80%;
   }
 }
 
