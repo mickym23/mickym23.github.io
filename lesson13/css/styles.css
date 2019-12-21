@@ -467,7 +467,7 @@ header .headerTitle {
 nav * {
   background-color: #f19953;
   text-align: center;
-  color: #edf7f6 !important;
+  color: #56351e;
 }
 
 nav ul {
@@ -504,6 +504,10 @@ nav li a {
 nav a:hover {
   background-color: #56351e;
   color: white;
+}
+
+nav a {
+  color: black;
 }
 
 main {
