@@ -783,6 +783,35 @@ div.cards section:nth-child(3), div.cards section:nth-child(4) {
   width: 100%;
 }
 
+.suitestitle {
+  padding-top: 2%;
+  font-family: "Poiret One";
+}
+
+.suites {
+  font-family: "Poiret One";
+  margin: 0 auto;
+  width: 100%;
+}
+
+.suites h3, .suites ul li {
+  text-align: left;
+}
+
+.suites img {
+  width: 100%;
+}
+
+.suites ul li {
+  font-weight: bold;
+}
+
+.conformmission {
+  margin: 0 auto;
+  width: 65%;
+  text-align: left;
+}
+
 footer, .contact {
   font-family: "Poiret One";
   width: 95%;
@@ -891,6 +920,13 @@ footer, .contact {
   }
   .weddingvens picture img {
     width: 70%;
+  }
+  .suites {
+    margin: 0 auto;
+    width: 40%;
+  }
+  .suites img {
+    width: 100%;
   }
 }
 

@@ -335,6 +335,35 @@ div.cards {
       width: 100%;
    }
 }
+
+.suitestitle {
+   padding-top: 2%;
+   font-family: $poiretone;
+}
+
+.suites {
+   font-family: $poiretone;
+   margin: 0 auto;
+   width: 100%;
+   h3, ul li {
+      text-align: left;
+   }
+
+   img {
+      width: 100%;
+   }
+
+   ul li {
+      font-weight: bold;
+   }
+}
+
+.conformmission {
+   margin: 0 auto;
+   width: 65%;
+   text-align: left;
+}
+
 footer, .contact {
    font-family: $poiretone;
    width: 95%;

@@ -7,8 +7,8 @@
       <!-- Meta Information -->
       <meta charset = "UTF-8">
       <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-      <meta name = "description" content = "Home Page, The Temple Inn & Suites, Term Project CIT230, Mikhail Cedras">
-      <title>Home | The Temple Inn & Suites</title> 
+      <meta name = "description" content = "Missionary Suites Page, The Temple Inn & Suites, Term Project CIT230, Mikhail Cedras">
+      <title>Missionary Suites | The Temple Inn & Suites</title> 
 
    <!-- Importing CSS Files -->
    <link rel = "stylesheet" href = "css/styles.css">   
@@ -34,15 +34,62 @@
  <nav>
       <ul class="navigation">
          <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-         <li><a class = "active" href="index.html">Home</a></li>
+         <li><a href="index.html">Home</a></li>
          <li><a href = "temple.html">Temples</a></li>
-         <li><a href="services.html">Services</a>
+         <li><a class = "active" href="services.html">Services</a>
          <li><a href = "reservation.html">Reservations</a></li>
          <li><a href = "contact.html">Contact Us</a></li>
       </ul>
    </nav>
 
    <main>
+      <h2 class = "suitestitle">Full-Time Missionary Suites</h2>
+
+      <div class = "suites">
+         <section>
+            <br><br>
+            <h3>Zevenwacht Suite</h3>
+            <ul>
+               <li>$200 per year</li>
+               <li>Air Conditioning</li>
+               <li>No TV</li>
+               <li>Two bedrooms, main en-suite</li>
+            </ul>
+            <img src = "images/suite1.jpg" alt = "Zevenwacht Suite Image">
+         </section>
+
+         <section>
+            <br><br>
+            <h3>Uitzicht Suite</h3>
+            <ul>
+                  <li>$250 per year</li>
+                  <li>Air Conditioning</li>
+                  <li>Built-in TV</li>
+                  <li>Balcony with stunning view</li>
+                  <li>One Bedroom, en-suite</li>
+               </ul>
+            <img src ="images/suite2.jpg" alt = "Uitzicht Suite Image">
+         </section>
+      </div><br><br><br>
+
+      <div class = "conformmission">
+      <form method = "get" action="js/thankyou.js">
+         <fieldset>
+            <legend>Contact Form</legend>
+   
+             <!-- Full Name Input -->
+             <label>Full Name* <br><input type="text" name="name" pattern="[A-Za-Z]{5,}" required></label><br><br>
+   
+             <!-- Email Address Input -->
+             <label>Email Address <br><input type="email" name="email" placeholder="someone123@company.com"></label><br><br>
+   
+             <label>Additional Infomation <br><textarea name="addDetails" placeholder = "Write Any Questions or Detaisl Here..."
+               maxlength="2048"></textarea></label><br>
+            
+               <br><button type="button" onclick="messageUser()">Submit</button>
+         </fieldset>
+      </form>
+      </div><br><br>
 
    <section class = "contact">
          <h4>Contact Us</h4>
@@ -68,6 +115,8 @@
     <script src = "js/nav.js"></script>
     
     <script src = "js/webfont.js"></script>
+
+    <script src= "js/thankyou.js"></script>
     
     </body>
     </html>
