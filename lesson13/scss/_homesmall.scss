@@ -189,7 +189,7 @@ main {
 
 .templetitle {
    margin: 0 auto;
-   width: 75%;
+   width: 100%;
    color: $whitesmoke;
    background-color: $lapis;
    margin-top: -0.3%;
@@ -214,15 +214,30 @@ div.cards {
    h2, h3, p {
       font-weight: bold;
    }
+
+   h2, h3 {
+      color: $whitesmoke;
+   }
+
    h2, h3, img, p {
       padding-left: 10%;
       padding-right: 10%; 
    }
+
+   section:nth-child(1), section:nth-child(2) {
+      padding-top: 3%;
+   }
+
+   section:nth-child(3), section:nth-child(4) {
+     padding-bottom: 3%; 
+   }   
 }
 
 footer, .contact {
-   font-family: $dancing;
-   width: 100%;
+   font-family: $poiretone;
+   width: 97.9%;
+   padding: 1.5% 0% 1.5% 0%;
+   border: groove whitesmoke 10px;
 }
 #byuiLink, footer a:link, footer a:visited {
 	color: $whitesmoke;

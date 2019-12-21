@@ -19,8 +19,10 @@ document.getElementById('fullDate').innerHTML = new Date().toLocaleString("en-ZA
 
 
 
-// BYU-I JSON
+// JSON Files
 const requestURL = "https://mickym23.github.io/lesson13/json/temples.json";
+const templeWeatherURL = "https://api.openweathermap.org/data/2.5/weather?zip=" + temples[i].zipcode + "&units=imperial&APPID=200cf102e64ee34534ad4bd4429e42bc";
+
 
 fetch(requestURL)
     .then(function (response){
@@ -95,12 +97,13 @@ fetch(requestURL)
             closure.textContent = temples[i].closures[h];
             closures.appendChild(closure);
          }
+
          for (let a = 0; a < temples[i].history.length; a++) {
             let hist = document.createElement('p');
             hist.textContent = temples[i].history[a];
             history.appendChild(hist);
          }
-         
+
           // Adding information under section tag 
           card.appendChild(name); 
           card.appendChild(image);
@@ -121,7 +124,36 @@ fetch(requestURL)
           card.appendChild(histories);
           card.appendChild(history);
            
-
           // Adding to information to card class
           document.querySelector('div.cards').appendChild(card);
-    }});
+
+         let hr = document.createElement('hr');
+         
+         // Set variable to JSON data values
+      let high = jsObject.main.temp_max;
+      let humidity = jsObject.main.humidity;
+      let windSpeed = jsObject.wind.speed;
+      let currentTemp = jsObject.main.temp;
+      let wsum = document.createElement('div');
+      let highTemp = document.createElement('p');
+      let hum = document.createElement('p');
+      let speedOfWind = document.createElement('p');
+      let tempOfCurrentTimes = document.createElement('p');
+
+      highTemp.textContent = high;
+      hum.textContent = humidity;
+      tempOfCurrentTimes.textContent = currentTemp;
+      speedOfWind.textContent = windSpeed;
+
+      wsum.appendChild(highTemp);
+      wsum.appendChild(hum);
+      wsum.appendChild(tempOfCurrentTimes);
+      wsum.appendChild(speedOfWind);
+
+      card.appendChild(hr);
+      card.appendChild(wsum);
+
+
+
+
+      }});

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 750px) {
 .navigation {
    display: flex;
 }
@@ -53,6 +53,9 @@ nav a {
    width: 75%;
 }
 
+.templetitle {
+   width: 75%;
+}
 div.cards { 
    grid-template-columns: auto auto;
    width: 75%;
