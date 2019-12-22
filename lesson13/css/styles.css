@@ -657,7 +657,7 @@ div.cards section:nth-child(3), div.cards section:nth-child(4) {
 .contactmain {
   margin: 0;
   background-color: #858585;
-  color: #edf7f6;
+  color: black;
 }
 
 .contactmain h1 {
@@ -681,7 +681,7 @@ div.cards section:nth-child(3), div.cards section:nth-child(4) {
 
 .cinfo p {
   padding-left: 5%;
-  color: #edf7f6;
+  color: black;
   text-align: center;
 }
 
@@ -949,7 +949,7 @@ footer, .contact {
   }
   .cinfo p {
     padding-left: 5%;
-    color: #edf7f6;
+    color: black;
     text-align: left;
   }
   .contactmain {
