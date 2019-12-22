@@ -872,6 +872,15 @@ input {
   margin-bottom: 15px;
 }
 
+.resources {
+  font-family: "Poiret One";
+  font-weight: bold;
+}
+
+.resources p {
+  padding: 1%;
+}
+
 footer, .contact {
   font-family: "Poiret One";
   width: 95%;
