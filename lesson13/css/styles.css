@@ -826,13 +826,13 @@ div.cards section:nth-child(3), div.cards section:nth-child(4) {
 
 .resmain {
   margin: 0 auto;
+  flex: 0 0 30em;
 }
 
 .flexcontainer {
   font-family: "Poiret One";
   font-weight: bolder;
   margin: 0 auto;
-  width: 80%;
 }
 
 .resform {
@@ -842,7 +842,7 @@ div.cards section:nth-child(3), div.cards section:nth-child(4) {
 .row {
   display: flex;
   justify-content: flex-start;
-  padding: 1% 1.5% 1% 1.5%;
+  padding: 1% 1.5% 1% 0%;
 }
 
 .row label {
