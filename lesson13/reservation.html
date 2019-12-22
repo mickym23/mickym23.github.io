@@ -1,34 +1,28 @@
 <!DOCTYPE HTML>
-<!-- Define Language Set-->
 <html lang="en-us">
-
    <head>
-
       <!-- Meta Information -->
       <meta charset = "UTF-8">
       <meta name = "viewport" content = "width = device-width, initial-scale = 1">
       <meta name = "description" content = "Reservation Page, The Temple Inn & Suites, Term Project CIT230, Mikhail Cedras">
       <title>Reservation | The Temple Inn & Suites</title> 
 
-   <!-- Importing CSS Files -->
+   <!-- Importing CSS File -->
    <link rel = "stylesheet" href = "css/styles.css">   
 
    <!-- Importing favicon.io file -->
    <link rel = "shortcut icon" href = "images/favicon.ico">
-
-</head>
+   </head>
 
 <body>
 <header>
-
+   <!-- Logo -->
    <picture>
       <img class = "logo" src = "images/logo.png" alt = "The Temple Inn Logo">
    </picture>
 
    <h1 class = "headerTitle">The Temple Inn & Suites</h1>
-
 </header>
-
 
  <!-- Navigation Bar -->   
  <nav>
@@ -43,7 +37,6 @@
    </nav>
 
    <main class = "resmain">
-
          <h2 class="resheader">Temple Inn & Suite Room Booking</h2>
          <div class = "flexcontainer">
          <form method ="get" action ="js/thankyou.js">
@@ -51,13 +44,13 @@
                  <legend>Booker's Information</legend>
                  <ul class="resform">
                  <li class="row">
-                 <label for="name">*Name:</label><input type="text" id="name" required></li>
+                 <label for="name">*Name:</label><input type="text" id="name"></li>
                  <li class="row">
-                 <label for = "email">*Email:</label><input type="text" id="email" required></li>
+                 <label for = "email">*Email:</label><input type="text" id="email"></li>
                  <li class="row">
-                 <label for = "phone">*Phone:</label><input type="tel" id="phone" required></li>
+                 <label for = "phone">*Phone:</label><input type="tel" id="phone"></li>
                  <li class = "row">
-                 <label for = "homeLocation">*Home State/Country</label><input type="text" id="homeLocation" required></li>
+                 <label for = "homeLocation">*Home State/Country</label><input type="text" id="homeLocation"></li>
                  </ul>
              </fieldset>
 
@@ -87,40 +80,42 @@
                              <option value="queen">Queen-Size Bed</option>
                              <option value="king">King-Size Bed</option>
                              </select>
-                             </li>
+                     </li>
                      </ul>
-                     
                      </fieldset>
                      <button class="resbutton" type = "button" onclick="thankYou()" >Submit</button>
                  </form>
                  </div>
 
-<section class = "contact">
-      <h4>Contact Us</h4>
-      <p>
-      &#9742;: +380 081 771 7116 <br>
-      &#9993;: templesinn@business.com <br>
-    </p>
-   </section>
- </main>
+            <!-- Contact Info -->
+            <section class = "contact">
+               <h4>Contact Us</h4>
+                  <p>
+                     &#9742;: +380 081 771 7116 <br>
+                     &#9993;: templesinn@business.com <br>
+                  </p>
+            </section>
+   </main>
  
- <footer>
+   <footer>
        <p>&copy; The Temple Inn and Suites | <a id="byuiLink" href="https://www.byui.edu/online">BYU-Idaho Online Learning</a> | Mikhail Malvern Cedras</p>
        <p>Material that helped make this site can be found here: <a href = "resources.html">Resources</a></p>
        <p id = fullDate></p>
- </footer>
+   </footer>
  
  <!-- Web Font External JavaScript -->
  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>      
  
- <!-- All JS Done in Scripts.js file -->
+ <!-- Date JS file -->
  <script src = "js/date.js"></script>
  
+ <!--Navigation 'Hamburger' Bar-->
  <script src = "js/nav.js"></script>
  
+ <!-- Load Fonts -->
  <script src = "js/webfont.js"></script>
 
+ <!-- Thank You Alert -->
  <script src ="js/thankyou.js"></script>
- 
  </body>
  </html>
