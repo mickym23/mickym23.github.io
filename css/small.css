@@ -1,0 +1,110 @@
+/* Typography import */
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Forum&family=Kanit&family=Marcellus&family=Maven+Pro&family=Oranienbaum&family=Prata&family=Red+Hat+Display&family=Ultra&display=swap');
+
+:root {
+
+   /* Color Scheme */
+   --haiti: #0a1128;
+   --prussian-blue : #001f54;
+   --endeavour: #055fb3;
+   --blue-chill: #1282a2;
+   --bianca: #fefcfb;
+
+   /* Typography */
+   --forum: "Forum", sans-serif;
+   --kanit: "Kanit", sans-serif;
+   --marcellus: "Marcellus", sans-serif;
+   --maven: "Maven Pro", sans-serif;
+   --oran: "Oranienbaum", sans-serif; /* I like */
+   --prata: "Prata", sans-serif;
+   --rhd: "Red Hat Display", sans-serif;
+   --ultra: "Ultra", sans-serif;
+}
+
+html {
+   color: var(--blue-chill);
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   background-color: var(--haiti);
+   max-width: 100vw;
+}
+
+.header {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-basis: auto;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#home-button {
+   padding: 0 0 0 0;
+   text-align: center;
+   box-shadow: 0 2.5px 2px -2px var(--blue-chill);
+}
+
+.header img {
+   width: 50%;
+   
+}
+
+.name-display {
+   text-align: center;
+   font-size: 8em;
+   font-family: var(--kanit);
+   letter-spacing: 4px;
+}
+
+h2.name-display {
+   font-size: 1.5em;
+}
+
+
+.nav-links {
+   display: flex;
+   flex-direction: row;
+   padding: 0;
+   font-size: 1.2em;
+   font-family: var(--kanit);
+   list-style-type: none;
+   column-gap: 15px;
+   max-width: 100vw;
+   box-shadow: 0 2.5px 2px -2px var(--blue-chill);
+ 
+}
+
+#headText1 {
+   margin-bottom: 5%;
+}
+ #headText2 {
+   margin-bottom: 5%;
+ }
+
+.nav-links a:visited, 
+.nav-links a {
+   color: inherit;
+   text-decoration: none;
+}
+
+.planet {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   background-color: black;
+   background: 
+   url(/public/img/venus_surface.jpg) 0/auto 100%;
+   /* Image Attribution: Solar System Scope, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons */
+   animation: spin 15s linear infinite;
+   box-shadow: -20px -20px 50px 2px rgb(34, 30, 30) inset, 
+               0 0 20px 2px #000;
+   transform: rotate(-10deg);
+ 
+}
+
+@keyframes spin {
+ 100% {
+   background-position:200% 0;
+ }
+}
