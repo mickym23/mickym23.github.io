@@ -1,0 +1,107 @@
+html, body, * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Rondal", serif;
+   max-width: 100vw;
+   border: 2px solid outset;
+}
+@font-face {
+   font-family: Rondal;
+   src: url(/public/fonts/RondalSemibold.otf);
+}
+
+.banner {
+   color: white;
+   background-color: black;
+   padding: 4%;
+   font-size: 2em;
+}
+
+.heading {
+   padding: 10%;
+   margin-bottom: 5em;
+}
+
+main {
+   padding: 5%;
+}
+
+h1 {
+   font-size: 3em;
+   border-right: 2px solid black;
+}
+
+.links {
+  border-radius: 10px;
+   background: #ffffff;
+   box-shadow:  20px 20px 60px #d9d9d9,
+               -20px -20px 60px #ffffff;
+   padding: 5%;
+   margin: 0;
+   font-size: 1.2em;
+}
+
+.links ul {
+   padding-top: 8%;
+   list-style-type: none;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 25px;
+   text-align: left;
+   margin: 0 auto;
+}
+
+.links a,
+.links a:visited,
+.links a:hover {
+   padding-bottom: 1%;
+   color: black;
+}
+
+@media only screen and (max-width: 350px) {
+   h1 {
+      border-right: none;
+   }
+}
+
+@media only screen and (min-width: 600px) {
+   .heading {
+      padding: 5%;
+      width: 75%;
+      margin: 0 auto 7em auto;
+   }
+
+   h1 {
+      font-size: 4em;
+   }
+}
+
+@media only screen and (min-width: 900px) {
+
+   .banner {
+      padding: 2% 4%;
+   }
+
+   .heading {
+      height: 120%;
+   }
+
+   h1 {
+      font-size: 5em;
+   }
+   .links {
+      width: 75%;
+      margin: 0 auto;
+      padding: 7.5%;
+      font-size: 1.5em;
+   }
+
+   .links h2 {
+      font-size: 1.7em;
+   }
+
+   .links a {
+      font-size: 1.1em;
+   }
+}

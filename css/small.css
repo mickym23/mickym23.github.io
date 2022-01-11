@@ -108,3 +108,84 @@ h2.name-display {
    background-position:200% 0;
  }
 }
+
+
+
+
+
+.c1{
+   display: inline-block;
+ }
+ .c2{
+   display: inline-block;
+ }
+ .c3{
+   display: inline-block;
+ }
+ .c4{
+   display: inline-block;
+ }
+ h1{
+   font-size: 3.2rem;
+   margin-top: 1%;
+ }
+ h1 .type{
+     font-size: 2.5rem;
+     overflow: hidden;
+     
+     white-space: nowrap; 
+     width: 0;
+     animation: 
+       typing 1s steps(25, end) forwards;
+ }
+ h1 .type2{
+     font-size: 2.5rem; 
+     overflow: hidden;
+ 
+     white-space: nowrap; 
+     width: 0;
+     animation: 
+       typing 1s steps(25, end) forwards;
+     animation-delay: 1s;
+ }
+ h1 .type3{
+     font-size: 2.5rem; 
+     overflow: hidden; 
+     white-space: nowrap; 
+     width: 0;
+     animation: 
+       typing 1s steps(25, end) forwards,
+       blinking 900ms infinite;
+     animation-delay: 2s;
+ }
+ @keyframes typing {
+   0% { 
+      width: 0;
+      border-right: 1px solid orange;
+   }
+   99% {
+      border-right: 1px solid orange;
+   }
+   100% { 
+      width: 100%;
+   border-color: transparent; 
+   }
+ }
+
+ @keyframes blinking {
+    from {
+       border-color: transparent
+    }
+    to {
+       border-color: orange;
+    }
+ }
+
+ h1 {
+    text-align: center;
+    font-size: 3em;
+ }
+
+ .centered {
+    text-align: center;
+ }
